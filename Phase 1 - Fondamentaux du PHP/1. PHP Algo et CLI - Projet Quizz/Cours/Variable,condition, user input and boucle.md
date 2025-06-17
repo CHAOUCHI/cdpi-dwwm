@@ -1,25 +1,25 @@
-# Variable, condition entrée utilisateurs et boucle.
-Ici vous apprendrez les fondamentaux de l'algo en PHP et la conception d'application en ligne de commande CLI(Command line Interface).
+# Variable, condition, entrée utilisateur et boucle.
+Ici, vous apprendrez les fondamentaux de l'algo en PHP et la conception d'applications en ligne de commande CLI (Command Line Interface).
 
 ## Lancer un programme
 
-Si se n'est pas dejà fait installez PHP.
+Si ce n'est pas déjà fait, installez PHP.
 
 ```bash
 sudo apt install php
 ```
 
-> Voir le cours pour plus de détail sur les moyens d'installation du PHP.
+> Voir le cours pour plus de détails sur les moyens d'installation de PHP.
 
-### Créer fichier main.php
+### Créer le fichier main.php
 ```bash
 mkdir premier_projet    # créer un dossier pour notre application
 cd premier_projet       # se déplacer dans le dossier
 touch main.php          # créer un fichier vierge main.php
-code .                  # Ouvrir le dossier du projet dans VSCode (. est le raccourcis vers dossier courant : premier_projet)
+code .                  # Ouvrir le dossier du projet dans VSCode (. est le raccourci vers le dossier courant : premier_projet)
 ```
 
-Dans le fichier main.php écrivez le code suivant
+Dans le fichier main.php, écrivez le code suivant
 
 *main.php*
 ```php
@@ -29,22 +29,22 @@ Dans le fichier main.php écrivez le code suivant
 ```
 
 ### `<?php` démarrage du programme
-`<?php`  est un mot clé clé du PHP qui signifie *départ du programme* **n'écrivez jamais rien avant ce mot clé**.
+`<?php` est un mot-clé du PHP qui signifie *départ du programme* **n'écrivez jamais rien avant ce mot-clé**.
 
-### Executer le script `main.php`
-Lancer se programme (vide) avec la commande php
+### Exécuter le script `main.php`
+Lancez ce programme (vide) avec la commande php
 
 ```bash
 php main.php
 ```
 
-Si tout ce passe bien il ne sais rien passé après l'execution du programme, c'est normal il est vide.
+Si tout se passe bien, il ne s'est rien passé après l'exécution du programme, c'est normal, il est vide.
 
-## Affichage à l'écran et mot réservé
+## Affichage à l'écran et mots réservés
 
-Certain mot clé sont reservé en PHP, vous connaissez déjà <?php qui défini le démmarrage du programme, mais il existe aussi echo qui affiche du texte dans le terminal utilisateur.
+Certains mots-clés sont réservés en PHP, vous connaissez déjà <?php qui définit le démarrage du programme, mais il existe aussi echo qui affiche du texte dans le terminal utilisateur.
 
-> Dans le cas des serveur PHP echo n'affiche pas dans le terminal mais envoie le texte au navigateur web (firefox, chrome) du client comme contenu HTML pour etre affiché à l'écran. C'est ainsi qu'on affichera des données dans une page web en PHP.
+> Dans le cas des serveurs PHP, echo n'affiche pas dans le terminal mais envoie le texte au navigateur web (Firefox, Chrome) du client comme contenu HTML pour être affiché à l'écran. C'est ainsi qu'on affichera des données dans une page web en PHP.
 
 ```php
 <?php
@@ -54,18 +54,277 @@ echo "Salut tout le monde !\n";
 ```
 > `\n` est le caractère *retour à la ligne de la table ASCII*.
 
-1. Executez ce script.
-
+1. Exécutez ce script.
 ## Variables
 
-### string
+En PHP, une variable est un espace mémoire qui permet de stocker une valeur (texte, nombre, etc.). 
 
-- $prenom="Pierre";
-- concaténation `.` mot clé réservé du PHP
+En PHP, il existe plusieurs types de données : 
+- Integer, les nombres entiers
+- Float, les nombres à virgule
+- String, les textes
+- Boolean, les valeurs binaires : `true` ou `false`
+- Array, les tableaux de données
+- Object, les instances de classes (un User, Player, Product, etc.)
+- NULL, la valeur que l'on donne à une donnée "vide".
 
-### number
-- $age = 25;
-- calcul et opérateur (+,-,*,/,% (exemple %2 pour les nombre pair))
+Une variable commence toujours par le symbole `$`, c'est cet opérateur qui permet de déclarer et d'accéder à une variable en mémoire.
+
+### Le type `string`
+
+Une chaîne de caractères `string` permet de stocker du texte.
+
+```php
+$prenom = "Pierre";
+```
+
+Pour afficher une variable, on utilise `echo` :
+
+```php
+echo $prenom;
+```
+
+#### La concaténation
+
+Pour assembler plusieurs chaînes de caractères, on utilise l'opérateur `.`, qui est également un mot réservé du PHP.
+
+```php
+$prenom = "Pierre";
+echo "Salut ".$prenom."\n"; // Affiche : Salut Pierre
+```
+
+> Je peux aussi directement concaténer une variable dans une string.
+> ```php
+> $prenom = "Pierre";
+> echo "Salut $prenom \n"; // Affiche : Salut Pierre
+> ```
+
+Cet opérateur permet de construire (sérialiser) une donnée textuelle.
+
+On peut par exemple enregistrer un message d'une application de tchat dans un fichier ou même des messages d'erreur dans un fichier de log.
+
+*sérialisation de données*
+```php
+<?php
+$prenom = "Pierre";
+$texte = "Salut tout le monde !";
+
+$fichier = fopen("messages.txt","a+");
+$data = $prenom." : ".$texte."\n";
+
+fwrite($fichier,$data);
+fclose($fichier);
+```
+
+Si vous lancez ce programme plusieurs fois, vous allez voir un fichier `messages.txt` se remplir.
+
+*messages.txt*
+```
+Pierre : Salut tout le monde !
+Pierre : Salut tout le monde !
+Pierre : Salut tout le monde !
+Pierre : Salut tout le monde !
+Pierre : Salut tout le monde !
+Pierre : Salut tout le monde !
+Pierre : Salut tout le monde !
+Pierre : Salut tout le monde !
+Pierre : Salut tout le monde !
+```
+
+### Le type `number`
+
+Les nombres peuvent être entiers (*integer*) ou à virgule (*double ou float*).
+
+```php
+$age = 25;
+$prix = 19.99;
+```
+
+On peut connaître le type d'une variable avec la fonction native du PHP `gettype()`.
+
+```php
+<?php
+$age = 25;
+$prix = 19.99;
+
+echo gettype($age)."\n";    // integer
+echo gettype($prix)."\n";   // double
+```
+
+On peut effectuer des opérations mathématiques :
+
+```php
+$rayon = 3;
+$surface_cercle = 3.14 *2*$rayon; // pi*2*r = surface
+echo "Rayon : ".$rayon."\n";
+echo "Surface : ".$surface_cercle."\n";
+```
+
+#### L'opérateur *modulo*
+
+L'opérateur `%` permet d'obtenir le reste d'une division. Par exemple, pour savoir si un nombre est pair, il suffit de voir si, une fois divisé par deux, il possède un reste.
+
+```php
+echo $age % 2; // Affiche 1 si $age est impair, 0 si pair
+```
 
 
+## Lire l'entrée utilisateur - STDIN
+Sous Linux, les caractères tapés au clavier sont enregistrés dans un fichier nommé `stdin`.
 
+Il est situé dans le dossier : /*TODO*/
+
+PHP nous fournit une variable native qui pointe vers ce fichier (pas besoin d'utiliser une fonction comme `fopen` pour ouvrir le fichier stdin donc).
+
+Cette variable s'appelle STDIN et je peux lire une ligne tapée au clavier avec la fonction `fgets()`.
+
+> fgets() lit tous les caractères tapés dans un fichier jusqu'au caractère `\n`, la touche entrée donc. C'est exactement ce qu'il nous faut pour lire des données tapées dans le terminal.
+
+```php
+<?php
+echo "Bonjour, veuillez taper quelque chose :\n";
+$texte = fgets(STDIN);
+echo $texte."\n";
+```
+
+fgets() est ce que l'on appelle une *fonction bloquante*, votre programme sera donc en pause tant que vous n'aurez pas tapé quelque chose.
+
+1. Lancez le programme et tapez quelque chose pour le voir apparaître à l'écran.
+
+## Exerices variables string, number et fgets()
+## Exercices variables string, number et fgets()
+
+1. **Afficher un prénom**  
+    Demandez à l'utilisateur de saisir son prénom, puis affichez un message de bienvenue personnalisé.  
+    *Exemple attendu :*  
+    ```
+    Quel est ton prénom ?
+    > Pierre
+    Bonjour Pierre !
+    ```
+
+2. **Addition de deux nombres**  
+    Demandez à l'utilisateur de saisir deux nombres, additionnez-les et affichez le résultat.  
+    *Exemple attendu :*  
+    ```
+    Entrez un premier nombre :
+    > 5
+    Entrez un second nombre :
+    > 7
+    Le résultat est : 12
+    ```
+
+3. **Calcul de l'âge dans 10 ans**  
+    Demandez à l'utilisateur son âge, puis affichez quel sera son âge dans 10 ans.  
+    *Exemple attendu :*  
+    ```
+    Quel est ton âge ?
+    > 20
+    Dans 10 ans, tu auras 30 ans.
+    ```
+
+4. **Concaténation de prénom et nom**  
+    Demandez à l'utilisateur de saisir son prénom puis son nom, puis affichez son nom complet sur une seule ligne.  
+    *Exemple attendu :*  
+    ```
+    Prénom :
+    > Marie
+    Nom :
+    > Dupont
+    Bonjour Marie Dupont !
+    ```
+
+5. **Calcul du périmètre d'un cercle**  
+    Demandez à l'utilisateur de saisir le rayon d'un cercle, puis affichez le périmètre (formule : 2 * pi * rayon, avec pi = 3.14).  
+    *Exemple attendu :*  
+    ```
+    Rayon du cercle :
+    > 4
+    Le périmètre du cercle est : 25.12
+    ```
+6. **Calcul de la date de naissance**
+    *Demandez son année de naissance à l'utilisateur puis afficher son age en fonction de l'année actuel.*
+    La fonction `date()` permet de connaitre la date d'aujourd'hui en fonction d'un format fournit en paramètre (entre les parentèses).
+    ```php
+    <?php
+    $annee = date("Y");
+    $mois = date("m");
+    $complet = date("Y:m:d - h:m:s");
+
+    echo "$annee \n";
+    echo "$mois \n";
+    echo "$complet \n";
+    ```
+    Voir w3schools :  https://www.w3schools.com/php/func_date_date.asp
+
+## Structure de controle - Condtion vraie faux
+Pour qu'un programme ne fasse pas toujours la même choses il lui faut des entrées utilisateurs et des structure de controle. Ces structures (if, while) évalue une condition et execute ou non code en fonction de leurs véracité : vraie ou faux.
+
+### If - Si Alors Sinon
+Les opérateurs `>,>=, <, <= et ==` renvoi une valeur boolean.
+```php
+echo 25 >= 18; // true
+echo gettype(25 >= 18); // boolean
+```
+Donc je peux utiliser ce opérateurs dans un `if` else (si, sinon).
+```php
+<?php
+$age = 25;
+if($age >= 18){
+    echo "Je suis majeur\n";
+}
+```
+`else` permet d'executer un bloc d'instructions dans le cas ou la condition est fausse.
+```php
+<?php
+$age = 25;
+if($age >= 18){
+    echo "Je suis majeur\n";
+}
+else{
+    echo "Je suis mineur\n";
+}
+```
+
+1. Voir le cours de w3schools sur la condition `if`:
+https://www.w3schools.com/php/php_if_else.asp
+
+Ici la variable `$age` est toujours égale à *25*; *25* étant supérieur à *18* le *if* est dit ***toujours vrai*** (la condition est toujours vraie).
+
+Vous pouvez construire un *vrai programme* en combiant le if et `fgets()` pour demander une donnée à l'utilisateur.
+
+```php
+<?php
+echo "Quel age as-tu ?\n";
+$age = fgets(STDIN); // le programme ATTEND que l'utilisateur tape au clavie (lecture du fichier stdin)
+if($age >= 18){
+    echo "Je suis majeur\n";
+}
+else{
+    echo "Je suis mineur\n";
+}
+```
+
+> Souvenez vous que `STDIN` est une constante du php qui reference le fichier stdin : le fichier d'entrée standard de votre oridnateur, il lit le clavier.
+
+#### Execices if et fgets
+
+1. Demandez à l'utilisateur de saisir un nombre, puis affichez le carré de ce nombre.
+    *Exemple attendu :*
+    ```
+    Entrez un nombre :
+    > 6
+    Le carré de 6 est 36.
+    ```
+
+2. **Nombre pair ou impair**  
+    Demandez à l'utilisateur de saisir un nombre, puis affichez si ce nombre est pair ou impair.
+
+3. **Mot de passe correct**  
+    Demandez à l'utilisateur de saisir un mot de passe. Si le mot de passe est "secret", affichez "Accès autorisé", sinon affichez "Accès refusé".
+
+4. **Comparer deux nombres**  
+    Demandez à l'utilisateur de saisir deux nombres, puis affichez lequel est le plus grand ou si les deux sont égaux.
+
+5. **Vérifier une année bissextile**  
+    Demandez à l'utilisateur de saisir une année, puis affichez si cette année est bissextile ou non (divisible par 4 et, si divisible par 100, aussi par 400).
