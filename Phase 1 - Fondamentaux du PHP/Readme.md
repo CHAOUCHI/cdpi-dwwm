@@ -18,13 +18,18 @@
   - Shop (grid)
   - Service (**)
   - Service (++ position absolute)
-- PhotoTek - PHP Server : $POST form-data, readDir, writeFile, et $GET
+- Instagram - PHP Server : $POST form-data, readDir, writeFile, et $GET
+  - Enregistrement de fichier binaires
   - catalogue-photo.php
   - get-photo.php?name=
   - post-photo.php
 - TodoList - session ,SQL (User||--o{Task)
+  - On a besoin de sql pour stocker les tâches
+  - On a besoin de session pour stocker l'utilisateur connecté
+  - On a besoin de $POST pour ajouter une tâche
+  - On a besoin de $GET pour afficher une tâche
   - task-list.php
-  - ppost-task.php
+  - post-task.php
   - get-task.php?id=
 
 
