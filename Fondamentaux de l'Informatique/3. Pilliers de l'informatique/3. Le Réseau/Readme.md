@@ -1,5 +1,21 @@
 
 # Le Réseau - Pillier de l'informatique
+
+L'objectif de ce chapitre réseau est que vous compreniez les tenant et aboutissant du réseau et plus particulièrement de la `mise en ligne d'un Site Web.`
+
+1. **Activité 1 :** Vous metterez en place une* machine virtuelle Linux* qui sera donc l'hebergeur de votre site web, comme le font OVH ou Hostinger par exemple.
+2. **Activité 2 :** Vous installerez un *serveur web HTTP* sur cette machine virtuelle et y déposerez votre premier site web.
+3. **Activité 3 :**  Vous apprendrez à mettre à jour ce site web à distance en utilisant le *protocole FTP* qui permet de *transférer des fichiers* entre deux ordinateurs distants.
+4. **Activité 4 :**  Et enfin, vous apprendrez à vous *connecter à un serveur distant* en utilisant le *protocole SSH* qui permet d'exécuter des commandes à distance sur un serveur.
+
+**Le HTTP, le FTP et le SSH** sont les outils de base de la mise en production (mise en ligne) d'un site web. Ce n'est pas de la programmation mais de l'administration système, c'est à dire la gestion des serveurs et des services qui y sont installés.
+
+C'est une compétence indispensable pour tout développeur web, car sans serveur, pas de site web.
+
+La suite de ce Readme est un cours théorique sur le réseau informatique, les protocoles et les services qui vous permettra de comprendre comment fonctionne un site web en ligne.
+
+## Introduction
+
 Nous s'avons maintenant que ordinateur est composé de matériel informatique et que la puissance de ce matériel est rendu disponible par le système d'exploitation aux différent programmes qui vivent sur l'ordinateur.
 
 Une question reste en suspend : *Comment est ce que deux programmes executés par deux ordinateurs distinct font pour communiquer ?*
