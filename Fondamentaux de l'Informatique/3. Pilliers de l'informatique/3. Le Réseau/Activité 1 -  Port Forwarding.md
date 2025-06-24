@@ -50,11 +50,18 @@ Pour tester le port forwarding, nous allons lancer un serveur PHP sur le port `7
     cd mon_site_web
     ```
 2. **Créez un fichier index.html** :
-   - Créez un fichier `index.html` dans ce dossier avec le contenu suivant :
-    ```html
-    <h1>Bienvenue sur mon site web !</h1>
-    <p>C'est une page de test pour le port forwarding de la VM !</p>
-    ```
+  Vous povuez utiliser `nano` comme éditeur de texte ou installer vscode avec les commandes :
+  ``` 
+  sudo apt install snapd
+  snap install vscode
+  ``` 
+  - Créez un fichier `index.html` dans ce dossier avec le contenu suivant :
+
+  ```html
+  <h1>Bienvenue sur mon site web !</h1>
+  <p>C'est une page de test pour le port forwarding de la VM !</p>
+  ```
+
 3. **Lancez un serveur PHP** :
   - Dans le terminal, toujours dans le dossier `mon_site_web`, lancez un serveur PHP sur le port `7070` :
    ```bash
@@ -86,6 +93,11 @@ http://<adresse_IP_DE_VOTRE_PC>:7070
 > Remplacez `<adresse_IP_DE_VOTRE_PC>` par l'adresse IP de la machine hôte que vous avez notée précédemment.
 
 4. Voyez votre beau site web s'afficher sur le PC d'un autre !
+
+## Utilisation de docker pour deployer automatiquement une application sur le réseau
+
+- docker run mario-kart port 7070
+- port forwarding 7070 donc dispo sur le LAN.
 
 ## Conclusion
 La plupart des développeurs ne font pas de port forwarding, ils utilisent des services d'hébergement qui le font pour eux. Cependant, il est intéressant de comprendre leur fonctionnement pour démystifier le principe d'un hébergement.

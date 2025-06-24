@@ -1,5 +1,7 @@
 ### **Service FTP vsftpd**
 
+Aujourd'hui la mise en production du code passe par git mais le transfert de fichier n'a pas toujours à passer par une application specifique le protocole FTP permet le transfert de fichier d'une point A à un point B sur Internet.
+
 #### **1. Qu'est-ce qu'un serveur FTP ?**
 FTP (File Transfer Protocol) est un protocole standard pour transférer des fichiers entre un client et un serveur sur un réseau. Un **serveur FTP** est un logiciel qui permet de stocker, recevoir et envoyer des fichiers, en fonction des permissions configurées. Le serveur FTP écoute les connexions entrantes des clients sur le port 21 par défaut et traite les commandes de transfert de fichiers.
 

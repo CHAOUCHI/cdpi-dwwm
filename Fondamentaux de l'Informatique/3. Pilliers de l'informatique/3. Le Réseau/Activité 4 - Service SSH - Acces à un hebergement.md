@@ -1,5 +1,18 @@
 # Service SSH
 
+Vous travaillez directement sur une mchine linux c'est pratique pour comprendre le fonctionnement des serveurs qui tournes effectivemment sous Linux.
+
+Mais alors, comment executer des commandes sur un serveur sans etre directement sur-place.
+
+Il faut accédes au terminal à distance. Un terminal peut également s'appeller un *shell* et le SSH (Secure SHell) est le protocole qui permet de controler un ordinateur Linux à distance en ligne de commande.
+
+Il est primordiale de le connaitre pour travailler sur un serveur distant.
+
+C'est la dernière activité des fondamentaux, après çavous aurez les bases en réseau et en informatique pour travailler sur des environnement professionel.
+
+> Il ne vous manque que Docker et ont le verra plus tard dans l'année.
+
+
 ## Qu'est-ce qu'un serveur SSH ?
 
 Un **serveur SSH** est un programme qui permet à des utilisateurs de se connecter à une machine distante de manière sécurisée via le protocole SSH (Secure Shell). SSH chiffre la communication entre les deux machines, offrant ainsi une couche de sécurité pour l'administration à distance.

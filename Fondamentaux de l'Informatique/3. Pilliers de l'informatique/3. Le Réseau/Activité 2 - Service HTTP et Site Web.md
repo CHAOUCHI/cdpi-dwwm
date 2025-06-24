@@ -1,5 +1,9 @@
 #### **Service HTTP Apache2**
 
+Vous avez utilisé GitHub pages pour mettre en production un siteweb. Mais comment font les hebergeur pour servir votre site lorsque vous tapez une url dans firefox ?
+
+C'et tout le sujet de cette activité. Mettre en production un site web dans le LAN via une machine virtuelle comme le font les hebergeurs.
+
 ##### **1. Qu'est-ce qu'un serveur HTTP ?**
 Un serveur HTTP est un logiciel qui reçoit des requêtes HTTP (Hypertext Transfer Protocol) des clients, généralement des navigateurs web, et leur répond en envoyant le contenu demandé (pages web, fichiers, etc.). Il gère les requêtes entrantes et distribue le contenu en fonction de l'URL demandée. 
 

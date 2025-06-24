@@ -1,6 +1,6 @@
 # Activité - Créer un envrionnement de développement Linux
 
-Linux est le meilleurs envrionnement de développement grâce à sa fiabilité (une fois les commandes connu tout ce fait toujours de la même manière) et permet au développeur de développer dans un envrionnement similiaire à la production : la plupart des serveur moderne étant sous Linux.
+Linux est le meilleur envrionnement de développement grâce à sa fiabilité (une fois les commandes connues tout se fait toujours de la même manière) et permet au développeur de programmer dans un envrionnement similiaire à la production : la plupart des serveurs moderne étant également sous Linux.
 
 **Lancer VirtualBox et créer une nouvelle VM.**
 
@@ -10,14 +10,17 @@ N'oubliez pas de télécharger une image ISO de *Ubuntu* en avance car le télé
 ![alt text](../../images/image-33.png)
 
 ## Cahier des charges
+
+Lorsque vous allea lancez l'installation de la VM (au premier lancement), il faudra confihurer le nouveau système voici les quelques infos dont vous avez besoin :
+
 1. Créer une VM Debian 
     - cocher la case *Skip Unattended Install*
     - nommé la VM `server`
     - username : `user`
     - mot de passe : `user`
     - mot de passe root : `root`
-2. Mettez à jour la VM
-    - Ouvrez un terminal et tapez les commandes suivantes :
+2. Une fois la VM installez, mettez la à jour
+    - DANS LA VM : Ouvrez un terminal et tapez les commandes suivantes :
     ```bash
     su - # pour passer en mode administrateur 
     # Rentrez le mot de passe administrateur `root`
