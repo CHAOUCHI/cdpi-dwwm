@@ -1,6 +1,5 @@
 # Projet Quizz
 
-
 ## Objectif
 
 Créez un petit quiz interactif en ligne de commande (CLI) pour réviser les bases de l'algorithmique en PHP.
@@ -13,6 +12,8 @@ Créez un petit quiz interactif en ligne de commande (CLI) pour réviser les bas
 - récuperer des entrées utilisateur `fgets`
 - tableau pour les questions
 - tableau pour les réponses.
+
+- w3schools PHP : https://www.w3schools.com/php/default.asp
 
 ## Synopsis
 
@@ -103,6 +104,7 @@ Bien joué tu as gagné des millions !
 | Score | Augementer le score de 10 points quand une réponse est juste.|Afficher le score mis à jour du joueur avant chaque nouvelle question |
 |UI|Respecter l'interface utilisateur proposé plus haut|
 |Game Over | Quand il n'y a plus de questions le jeu s'arrete|Afficher le pourcentage de reussite du joueur et dite lui si il a gagner ou perdu. <br> Il faut plus de 50% de bonne réponses pour gagner. |
+| [BONUS] Sauvagarde | A l'aide du cours PHP et la documentation W3schools sauvegardé le score en fin de partie et récupéré le en début de partie |
 
 
 
