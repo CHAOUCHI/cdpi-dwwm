@@ -1,4 +1,6 @@
-# Attendu de formation
+# Attendu de formation 
+
+## Phase 1
 Les projets suivant doivent être chaqu'un rendu dans un répo github séparé.
 
 ## Projet Quizz
