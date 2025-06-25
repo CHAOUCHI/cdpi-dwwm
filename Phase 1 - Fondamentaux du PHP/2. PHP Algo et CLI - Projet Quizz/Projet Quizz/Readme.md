@@ -4,7 +4,6 @@
 
 Créez un petit quiz interactif en ligne de commande (CLI) pour réviser les bases de l'algorithmique en PHP.
 
-
 ## Pré-requis
 - variables
 - if
