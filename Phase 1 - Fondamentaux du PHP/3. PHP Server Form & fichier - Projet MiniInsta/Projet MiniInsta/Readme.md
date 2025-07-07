@@ -30,6 +30,19 @@ Les fichiers uploadés doivent respecter le format de nommage suivant : `date-au
 Exemple : *20250601144419-pierre-chat.png* pour une photo de chat postée par Pierre le 01/06/2025 à 14h44m19s.
 > Cela permet de démontrer la capacité à traiter à la fois les champs textuels et binaires d'un formulaire HTML.
 
+## Maquette
+***Lien vers la maquette intéractive Figma* :**
+https://www.figma.com/proto/AfXaBAS7XJe0K8ImBVUXjr/Mini-Insta?node-id=1-2&t=40RD9xGUseWGwVMw-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2
+
+**Maquette complète** : https://www.figma.com/design/AfXaBAS7XJe0K8ImBVUXjr/Mini-Insta?node-id=0-1&t=VjGgmAavKjRzG1Vb-1
+
+*Page d'accueill, je peux scroller aux travers des différentes photos*
+![alt text](image.png)
+
+
+*Page upload, je peux cliquer sur retour à l'acceuil pour revenir à l'accueil*
+![alt text](image-1.png)
+
 ## Cahier des charges
 | Tâches | Description | Contraintes |
 |--------|-------------|-------------|
