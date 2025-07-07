@@ -43,6 +43,11 @@ https://www.figma.com/proto/AfXaBAS7XJe0K8ImBVUXjr/Mini-Insta?node-id=1-2&t=40RD
 *Page upload, je peux cliquer sur retour à l'acceuil pour revenir à l'accueil*
 ![alt text](image-1.png)
 
+**maquette avancée**
+![alt text](image-2.png)
+
+https://www.figma.com/design/AfXaBAS7XJe0K8ImBVUXjr/Mini-Insta?node-id=1-238&t=VjGgmAavKjRzG1Vb-1
+
 ## Cahier des charges
 | Tâches | Description | Contraintes |
 |--------|-------------|-------------|
