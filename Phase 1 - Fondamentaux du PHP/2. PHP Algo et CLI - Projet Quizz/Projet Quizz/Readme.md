@@ -123,13 +123,15 @@ $questions = [
 ];
 
 
-$reponses = {1, 2, 3, 1, 3};
+$reponses = [1, 2, 3, 1, 3];
 $score = 0;
 
 $NB_QUESTIONS = count($questions);
 
 for($i = 0; $i < $NB_QUESTIONS; $i++){
-    echo $questions[$i]."\n";
+    echo "Question : ".$questions[$i]."\n";
+    echo "La bonne répoonse : ".$reponses[$i]."\n";
+    var_dump($i); // index des questions et reponses
     // Votre code
     
 }
