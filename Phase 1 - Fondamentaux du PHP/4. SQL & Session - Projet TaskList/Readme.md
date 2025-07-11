@@ -7,6 +7,8 @@ Pour cette dernière activité, nous avons besoin de :
 
 Ainsi votre code PHP pourra intéragir avec une base de données SQL. Et vous pourrez administrer cette base de données avec Adminer.
 
+L'objectif final de ce cours est de vous faire créer des données dans une table de données SQL via l'interface Adminer.
+
 # Serveur MYSQL
 Le moyen le plus simple et moderne de mettre en place un serveur MySQL est d'utiliser Docker.
 
