@@ -22,7 +22,7 @@ sudo apt install docker.io
 
 ## 2. Lancer un Server MySQL
 ```bash
-sudo docker run --name bdd -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=app-database --rm -d -p 3306:3306 mysql
+sudo docker run --name bdd -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=app-database -d -p 3306:3306 mysql
 ```
 Les informations suivantes sont importantes :
 - `bdd` est le nom du serveur mysql
@@ -47,6 +47,12 @@ Il faut stoper le container bdd :
 ```bash
 sudo docker stop bdd
 ```
+
+> Pour vérifier si un serveur mysql occupe déjà le port 3306, vous pouvez utiliser la commande suivante :
+```bash
+systemctl status mysql
+```
+> Si il est marqué *actif* alors le port est déjà occupé.
 
 > La commande `sudo docker rm bdd` peut supprimer un container peut supprimer un container.
 
