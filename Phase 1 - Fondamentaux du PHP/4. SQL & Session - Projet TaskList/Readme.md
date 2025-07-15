@@ -98,6 +98,13 @@ cd ~/adminer
 ```
 
 ### Lancer Adminer
+
+### Pré-requis php extensions
+Assurez-vous d'avoir les extensions PHP suivantes installées :
+```bash
+sudo apt install php-mysql php-pdo
+```
+
 Lancez le serveur web PHP dans le dossier où se trouve `adminer.php` :
 ```bash
 php -S localhost:3000
