@@ -94,8 +94,10 @@ Ou bien en ligne de commande :
 wget https://www.adminer.org/latest.php -O adminer.php
 mkdir ~/adminer
 mv adminer.php ~/adminer/
-cd ~/adminer
 ```
+
+> wget permet de télécharger un fichier depuis internet en ligne de commande : concrètement il fait la même requete HTTP GET que votre navigateur.
+> mv permet de déplacer un fichier d'un dossier à un autre.
 
 ### Lancer Adminer
 
@@ -107,13 +109,17 @@ sudo apt install php-mysql php-pdo
 
 Lancez le serveur web PHP dans le dossier où se trouve `adminer.php` :
 ```bash
+cd adminer
 php -S localhost:3000
 ```
+
+> Assurez d'avoir lancer adminer dans le bon dossier, celui où se trouve le fichier `adminer.php`. Vous pouvez vérifier avec la commande `ls` que le fichier est bien présent.
 
 Puis rendez-vous sur `http://localhost:3000/adminer.php` dans votre navigateur.
 
 > Attention ! Il est possible que le fichier porte le nom de la version, par exemple `adminer-5.3.0.php`. Dans ce cas, vous devrez accéder à `http://localhost:3000/adminer-4.8.1.php`.
-> Vous pouvez aussi renommer le fichier en `adminer.php` ou même `index.php` pour simplifier.
+
+> Vous pouvez aussi renommer le fichier en `adminer.php` ou même `index.php` pour simplifier le chemin à taper.
 
 ### Connexion à la base de données
 Dans Adminer, connectez-vous avec les informations suivantes :
