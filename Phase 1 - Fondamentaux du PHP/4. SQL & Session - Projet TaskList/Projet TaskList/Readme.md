@@ -25,6 +25,32 @@ Développer une application web de gestion de tâches (TaskList) avec des foncti
 - Utilisation de `require_once` pour inclure des fichiers PHP
 - Créer des fonctions pour l'accès CRUD aux tables SQL
 
+## 1. Clonez Template du projet
+Je vous ai déjà crée un template de projet avec toutes les pages nécessaires.
+
+Cloner le projet avec les commandes suivantes :
+```bash
+git clone https://github.com/CHAOUCHI/tasklist-template.git
+cd tasklist-template
+rm -r .git  # Obligatoire pour écraser le lien avec mon repo
+```
+
+## 2. Pushez le projet sur votre propre compte GitHub
+
+```bash
+rm -r .git  # Si ce n'est pas déjà fait
+git init
+gh repo create 
+```
+> ATTENTION !  REPONDEZ PUSH EXISTING LOCAL REPOSITORY pour push le dossier courant sur votre compte github.
+
+Fait ensuite un premier commit et un push :
+```bash
+git add .
+git commit -m "Initial commit"
+git push --set-upstream origin master
+```
+
 ## Synopsis
 L'application TaskList permet aux utilisateurs de s'inscrire, de se connecter et de gérer leurs tâches personnelles. Chaque utilisateur peut ajouter ses propres tâches. Les tâches sont stockées dans une base de données SQL, et les sessions sont utilisées pour maintenir l'utilisateur connecté et ainsi afficher uniquement les tâches qui lui appartiennent.
 
