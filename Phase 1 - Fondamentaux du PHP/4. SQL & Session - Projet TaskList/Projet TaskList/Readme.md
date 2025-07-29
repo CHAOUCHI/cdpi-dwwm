@@ -32,13 +32,13 @@ Cloner le projet avec les commandes suivantes :
 ```bash
 git clone https://github.com/CHAOUCHI/tasklist-template.git
 cd tasklist-template
-rm -r .git  # Obligatoire pour écraser le lien avec mon repo
+sudo rm -r .git  # Obligatoire pour écraser le lien avec mon repo
 ```
 
 ## 2. Pushez le projet sur votre propre compte GitHub
 
 ```bash
-rm -r .git  # Si ce n'est pas déjà fait
+sudo rm -r .git  # Si ce n'est pas déjà fait
 git init
 gh repo create 
 ```
