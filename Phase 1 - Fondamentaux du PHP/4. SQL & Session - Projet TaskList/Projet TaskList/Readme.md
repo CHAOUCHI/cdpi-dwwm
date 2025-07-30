@@ -61,6 +61,27 @@ L'application TaskList permet aux utilisateurs de s'inscrire, de se connecter et
 - Les pages doivent rediriger vers la page de connexion si l'utilisateur n'est pas connecté.
 - Les tâches doivent être affichées uniquement pour l'utilisateur connecté.
 
+## Tables SQL
+
+```mermaid
+erDiagram
+    User {
+        id INT
+        email VARCHAR(255)
+        password VARCHAR(255)
+    }
+    Task{
+        id INT
+        title VARCHAR(255)
+        description TEXT
+        user_id INT
+    }
+    User ||--o{ Task : has
+```
+
+### Association d'une tache et d'un utilisateur
+- Un utilisateur peut avoir plusieurs tâches, mais une tâche appartient à un seul utilisateur. Voilà pourquoi il est obligatoire pour la table `Task` d'avoir une colonne `user_id` qui fait référence à l'identifiant de l'utilisateur dans la table `User`. (voir le cours sur 6 sur PDO Association)
+
 ## Cahier des charges
 | Tâches | Description | Contraintes |
 |--------|-------------|-------------|
