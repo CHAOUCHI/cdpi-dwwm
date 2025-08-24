@@ -1,0 +1,5 @@
+- Mettre à jour l'affichage (sans react)
+- state
+- props (inputs)
+- event handlers (outputs)
+- effect (init et reactive programming)

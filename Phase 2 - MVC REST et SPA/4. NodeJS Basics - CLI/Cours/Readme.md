@@ -1,0 +1,3 @@
+- STDIN/STDOUT
+- readline
+- fs (file system)

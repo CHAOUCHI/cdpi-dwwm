@@ -1,0 +1,7 @@
+- Algo JS
+- DOM
+- Events
+- Attributs HTML
+- Contenu HTML
+- Promises
+- Fetch API
