@@ -1,4 +1,4 @@
-- Pourquoi l'OOP (démo Earthdefneder sans OOP)
+- Pourquoi l'OOP (démo Earthdefender sans OOP)
 - Classes et instances
 - Propriétés et méthodes
 - Encaplusation
