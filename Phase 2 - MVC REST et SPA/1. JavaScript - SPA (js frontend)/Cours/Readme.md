@@ -9,3 +9,6 @@ Les questions a se poser sont les suivantes :
 5. *AJAX request avec Fetch* Comment faire des requêtes HTTP (GET, POST, PUT, DELETE) sans recharger la page ?
 6. *Stockage* Comment stocker une information dans le navigateur du client (localStorage, sessionStorage, cookies) ?
 7. *Bonus* : API Geolocation. Comment récupérer la position géographique de l'utilisateur ? (Chrome uniquement)
+
+
+<!-- TODO EXERCICES -->
