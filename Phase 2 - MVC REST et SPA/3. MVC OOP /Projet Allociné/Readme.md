@@ -1,6 +1,6 @@
 # Synopsis
 
-Cette application permet de rechercher, consulter et gérer des films et leurs expositions. Chaque film possède des informations détaillées et peut être associé à plusieurs expositions.
+Cette application permet de rechercher, consulter et gérer des films et leurs diffusions. Chaque film possède des informations détaillées et peut être associé à plusieurs diffusions.
 
 # Diagramme Entity Relation
 
@@ -13,31 +13,28 @@ erDiagram
         enum genre
         string auteur
     }
-    EXPOSITION {
+    DIFFUSION {
         int id PK
         int film_id FK
-        date date_exposition
+        date date_diffusion
     }
-    FILM ||--o{ EXPOSITION : "possède"
+    FILM ||--o{ DIFFUSION : "possède"
 ```
 
 # Cahier des charges
 
 | Taches                         | Description                                                                 | Cas critique                                      |
 |------------------------------- |-----------------------------------------------------------------------------|---------------------------------------------------|
-| Liste des films                | Afficher tous les films enregistrés                                         | Aucun film existant                               |
-| Recherche de film              | Rechercher un film par nom, genre, auteur, date de sortie                   | Aucun résultat, recherche trop large/étroite      |
-| Détail d’un film               | Afficher les détails d’un film et ses expositions associées                 | Film inexistant, expositions manquantes           |
 | Création d’un film             | Ajouter un nouveau film                                                     | Données invalides, doublon                        |
-| Modification d’un film         | Modifier les informations d’un film                                         | Film inexistant, données invalides                |
-| Suppression d’un film          | Supprimer un film et ses expositions associées                              | Film inexistant, suppression en cascade           |
-| Liste des expositions          | Afficher toutes les expositions d’un film                                   | Film inexistant, aucune exposition                |
-| Création d’une exposition      | Ajouter une exposition à un film                                            | Film inexistant, date invalide                    |
-| Modification d’une exposition  | Modifier la date d’une exposition                                           | Exposition inexistante, date invalide             |
-| Suppression d’une exposition   | Supprimer une exposition                                                    | Exposition inexistante                            |
+| Liste des films                | Afficher tous les films enregistrés                                         | Aucun film existant                               |
+| Détail d’un film               | Afficher les détails d’un film et ses diffusions associées                  | Film inexistant, diffusions manquantes            |
+| Section Ajouter une diffusion  | Ajouter une nouvelle diffusion à un film                                    | Film inexistant, date invalide                    |
+| Liste des diffusions           | Afficher toutes les diffusions d’un film                                    | Film inexistant, aucune diffusion                 |
+| Suppression d’un film          | Supprimer un film et ses diffusions associées                               | Film inexistant, suppression en cascade           |
+| Recherche de film              | Rechercher un film par nom, genre, auteur, date de sortie                   | Aucun résultat, recherche trop large/étroite      |
 
 # Entity
-Exemple d'entités PHP pour les tables `Film` et `Exposition` :
+Exemple d'entités PHP pour les tables `Film` et `Diffusion` :
 ```php
 class FilmEntity {
     private int $id;
@@ -51,10 +48,10 @@ class FilmEntity {
 ```
 
 ```php
-class ExpositionEntity {
+class DiffusionEntity {
     private int $id;
     private int $film_id;
-    private DateTime $date_exposition;
+    private DateTime $date_diffusion;
     // Getters et Setters...
 }
 ```
