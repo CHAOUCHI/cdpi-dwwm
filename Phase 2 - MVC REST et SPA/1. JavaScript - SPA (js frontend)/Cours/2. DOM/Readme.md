@@ -52,6 +52,9 @@ console.log("Hello World !");
 - `php -S localhost:8000` si vous avez PHP d'installé
 - `python3 -m http.server` si vous avez Python d'installé
 
+
+5. Verifiez que le message `Hello World !` s'affiche dans la console du navigateur.
+    
 ## Le DOM
 Le DOM est une API qui permet d'accéder aux balises HTML via la variable `document`.
 
@@ -66,14 +69,14 @@ console.log("Document", document);
 1. Cherchez l'attribut body dans l'objet document affiché dans la console, il contient tout votre HTML.
 ![alt text](image-2.png)
 
-`document` est un accès direct à toutes les propriétés du HTML, je peux par exemple modifier le style CSS de la balise body.
+`document` est un accès direct à toutes les propriétés du HTML. Je peux, par exemple, modifier le style CSS de la balise body.
 
 ```js
 document.body.style.backgroundColor = "red";
 ```
 ![alt text](image-3.png)
 
-> Modifier le style CSS d'un élément de cette façon n'est pas une bonne pratique ; ici c'est surtout un exemple pour vous faire réaliser le lien entre la variable `document` en JavaScript et l'état du document HTML.
+> Modifier le style CSS d'un élément de cette façon n'est pas une bonne pratique ; ici, c'est surtout un exemple pour vous faire réaliser le lien entre la variable `document` en JavaScript et l'état du document HTML.
 
 <!-- ## Les Projets
 
@@ -89,3 +92,4 @@ cd parcours_dwwm
 cd 4.\ Introduction\ JavaScript\ et\ les\ langages\ interprétés/API/Browser/DOM/Projets/
 python3 -m http.server
 ``` -->
+
