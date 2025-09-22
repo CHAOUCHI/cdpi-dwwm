@@ -11,7 +11,7 @@ Si vous avez une page très dynamique il est utile de connaitre la balise `templ
 
 <template>
     <div class="item">
-        <img src="http://unsplash.com/100/100"/>
+        <img src="http://unsplash.it/100/100"/>
         <p></p>
     </div>
 </template>
