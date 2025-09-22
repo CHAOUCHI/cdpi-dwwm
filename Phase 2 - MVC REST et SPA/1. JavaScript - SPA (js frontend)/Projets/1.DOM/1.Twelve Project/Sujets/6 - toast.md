@@ -1,6 +1,9 @@
 # Projet 6 - Toast
 ## Le Besoin
 Faire apparaitre d'un notification type toast lors du clique sur le bouton enregistrer
+
+![alt text](image-8.png)
+
 ## Pré-requis
 ### Le DOM
 #### Créer un element HTML dynamiquement 

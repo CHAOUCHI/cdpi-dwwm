@@ -2,6 +2,9 @@
 
 ## Le Besoin
 Créer un element type FAQ qui cache du contenu par tiroir.
+
+![alt text](image-9.png)
+
 ## Pré-requis
 - L'evenement *click*
 - Modifier les class css dynamiquement

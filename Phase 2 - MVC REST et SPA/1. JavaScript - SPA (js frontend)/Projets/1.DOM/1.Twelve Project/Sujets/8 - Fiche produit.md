@@ -2,6 +2,9 @@
 
 ## Le Besoin
 Créer une carte de produit avec un bouton ajouter au panier. Un message apparait indiquant le nombre de produit dans le panier à chaque clic.
+
+![alt text](image-10.png)
+
 ## Pré-requis
 - L'evenement *click*
 - Modifier un attribut HTML en JavaScript

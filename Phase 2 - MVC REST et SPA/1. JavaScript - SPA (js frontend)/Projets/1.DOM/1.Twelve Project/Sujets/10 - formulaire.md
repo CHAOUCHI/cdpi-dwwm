@@ -1,7 +1,9 @@
 # Projet 10 - Formulaire
 
 ## Le Besoin
-Créer le front-end d'un formulaire en JavaScript ainsi que ces messages d'erreurs.
+Créer le front-end d'un formulaire de contact en JavaScript ainsi que ces messages d'erreurs.
+
+![alt text](image-12.png)
 
 ## Pré-requis
 - la condition `if`

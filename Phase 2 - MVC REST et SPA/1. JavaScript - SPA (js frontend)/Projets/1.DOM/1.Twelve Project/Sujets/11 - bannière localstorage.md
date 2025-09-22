@@ -1,6 +1,8 @@
 # Projet 1 - Bannière
 **Besoin** : Créer une bannière de cookie qui disparait quand l'utilisateur à accpeter les cookies.
 
+![alt text](image-13.png)
+
 # Pré-requis
 ## DOM
 - Récupérer une balise HTML en JS

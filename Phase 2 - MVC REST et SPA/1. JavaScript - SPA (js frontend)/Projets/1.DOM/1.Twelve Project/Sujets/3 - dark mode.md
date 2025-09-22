@@ -5,6 +5,10 @@ Concevoir un bouton qui change l'apparence visuel du site de light-mode à dark-
 ## Astuce
 Le plus simple est d'appliquer une classe css sur tout les elements voulu lorsque le site est en darkmode ou de la retirer si le site est en light mode. L'utilisation d'une boucle for est conseillé.
 
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+
 # Pré-requis
 ##  Le DOM
 Récupérer un tableau de toutes les balises HTML qui possède un certain selecteur CSS( comme une classe par exemple).

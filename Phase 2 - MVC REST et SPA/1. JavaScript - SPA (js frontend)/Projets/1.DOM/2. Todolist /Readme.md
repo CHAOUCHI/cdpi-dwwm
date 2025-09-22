@@ -19,13 +19,30 @@ Il faut appuier sur le bouton AJOUTER UNE Tache pour ajouter une nouvelle tâche
 ### Lien proto figma intéractif 
 https://www.figma.com/proto/e4qUHkuVIG9kX9MaqR6tJW/Untitled?node-id=101-10&t=t8VKEBFTkTtxBZVB-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=101%3A10
 
-### Capture d'écrans
-#### Accueil
+### Maquettes
+
+### Version Simpliste
+![alt text](image-3.png)
+
+
+#### BONUS Accueil
 ![alt text](image.png)
-#### Formulaire d'ajout de tâche
+#### BONUS Formulaire d'ajout de tâche
 ![alt text](image-1.png)
 
 ## Cahier des charges
+
+### 1. Version simpliste
+
+Le cahier des charges ci-dessous contient tout les détail du projet.
+
+Dans un premier temps vous devez faire la version simpliste :
+![alt text](image-3.png)
+
+
+http://localhost:9090/11%20-%20todolist/
+
+### 2. Version complète
 
 L'application est une Single Page Application (SPA), c'est à dire qu'elle ne possède qu'une page `index.html` c'est grâce à votre maitrise du DOM que vous allez pouvoir modifier l'affichage :) .
 
@@ -36,8 +53,8 @@ L'application est une Single Page Application (SPA), c'est à dire qu'elle ne po
 | Version mobile| La version mobile est prioritaire et doit être faite en premier |
 | UX |  - Le formulaire d'ajout apparait en slide in comme dans le proto figma <br> - Le bouton ajouter doit toujours être visible |
 | Valider une tache| Si l'utilisateur valide une tache ses changement doivent être répercuté dans le localStorage |
-| Barre de recherche | Ajouter une barre de recherche pour afficher uniquement les tâches qui contiennent le texte tapé |
-| Trier par date | L'utilisateur doit pouvoir trier dans de la tâches la plus vieille à la plus récente et inversement |
+| (BONUS) Barre de recherche | Ajouter une barre de recherche pour afficher uniquement les tâches qui contiennent le texte tapé |
+| (BONUS) Trier par date | L'utilisateur doit pouvoir trier dans de la tâches la plus vieille à la plus récente et inversement |
 | (BONUS)Epingler une tache | Ajouter un icone épingle sur chaque tache pour les fiare apparaitre en haut de la page par défaut et les mettre en avant | Il faut pouvoir épingler et désépingler une tâche |
 | (BONUS)Trie par # Tag | Chaque tache peut avoir un ou plusieurs hashtag lors de la création. Il faut pouvoir trier les tâches par hashtag comme sur youtube |  |
 

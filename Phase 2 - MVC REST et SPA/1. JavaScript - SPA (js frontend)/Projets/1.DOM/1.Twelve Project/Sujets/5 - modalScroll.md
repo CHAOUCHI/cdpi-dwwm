@@ -2,6 +2,9 @@
 ## Le Besoin
 Faire apparaitre un pop up lorsque l'utilisateur scroll suffisement.
 Par suffisement on entend lorsque l'utilisateur a atteint une certaine portion de la page.
+
+![alt text](image-6.png)
+
 ## Pré-requis
 L'évenement "*scroll*" et la position d'une balise dans le document.
 

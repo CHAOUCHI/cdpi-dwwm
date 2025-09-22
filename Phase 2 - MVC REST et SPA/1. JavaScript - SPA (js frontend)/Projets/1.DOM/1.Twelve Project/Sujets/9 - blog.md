@@ -2,6 +2,8 @@
 ## Le Besoin
 Afficher dynamique le contenu d'une base de donnée. Ces données sont des articles de blog.
 
+![alt text](image-11.png)
+
 ## Pré-requis
 - CSS Grid
 - La boucle for
@@ -17,7 +19,7 @@ Afficher dynamique le contenu d'une base de donnée. Ces données sont des artic
 # La base de donnée
 Copiez ce tableau d'objets dans votre code et utilisez le comme une base de données. Le plus souvent les serveurs envois une tableau d'objet comme celui-ci pour formater les données d'une BDD.
 ```js
-const posts = 
+const posts_arr = 
 [
     {
         titre:"SEO, les bonnes pratiques",
@@ -38,4 +40,17 @@ const posts =
         extrait:"Mollit ut mollit esse exercitation nisi ut labore velit anim pariatur sit deserunt anim. Dolore consequat aliquip esse elit culpa aliqua. Consectetur mollit irure minim incididunt nulla non. Ad sunt mollit aliqua minim fugiat et minim commodo. Anim proident incididunt veniam duis cupidatat irure eu. Elit nulla nisi ea laborum mollit excepteur enim ut Lorem. Cupidatat minim consectetur mollit in ut consectetur est duis do sint cillum nisi."
     }
 ];
+```
+
+Vous pouvez accéder aux données de cette façon :
+```js
+console.log(posts_arr[0].titre); // Affiche le titre du premier article
+console.log(posts_arr[1].extrait); // Affiche l'extrait du deuxième article
+```
+
+Ou avec une boucle for :
+```js
+for (post_obj of posts_arr){
+    console.log(post_obj.titre); // Affiche le titre de chaque article
+}
 ```

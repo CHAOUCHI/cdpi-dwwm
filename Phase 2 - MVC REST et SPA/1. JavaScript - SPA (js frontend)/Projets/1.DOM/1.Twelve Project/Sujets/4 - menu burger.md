@@ -1,6 +1,11 @@
 # Projet 4 - Menu burger
 ## Le Besoin
 Concevoir un menu burger qui fait apparaitre un menu de navigation full screen par la droite.
+
+![alt text](image-4.png)
+
+![alt text](image-5.png)
+
 ## Pré-requis
 - CSS transition
 - DOM Evenement
