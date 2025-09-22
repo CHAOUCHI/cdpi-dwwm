@@ -14,10 +14,10 @@ Si vous avez une page très dynamique il est utile de connaitre la balise `templ
         <img src="http://unsplash.com/100/100"/>
         <p></p>
     </div>
-<template>
+</template>
 <script>
 // Je récupère le template
-const template document.querySelector("template");
+const template = document.querySelector("template");
 
 // Je le clone
 const cloneItem1 = template.content.cloneNode(true);
