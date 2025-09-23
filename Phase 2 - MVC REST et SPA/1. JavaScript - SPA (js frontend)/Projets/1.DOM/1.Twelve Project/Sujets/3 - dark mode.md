@@ -23,5 +23,3 @@ tableauDeBalise.forEach(function(balise){
 |Tâches| Description | Contraintes |
 |---|---|---|
 |Affichage HTML CSS| Intégrer une page HTML CSS qui contient un titre un bouton darkmode et un fond de couleur claire | Lors de l'activation du darkmode le fond de couleur change et la couleur du texte deviens blanche pour etre lisible |  
-| Icone like | L'icone like change d'apparence au clic|
-|  Bouton abonnez-vous | Change de couleur au clic et le texte passe de "Abonnez-vous" à "Abonné" |
