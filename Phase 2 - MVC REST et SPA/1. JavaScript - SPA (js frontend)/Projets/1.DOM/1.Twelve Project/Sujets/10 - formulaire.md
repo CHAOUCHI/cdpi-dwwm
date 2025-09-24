@@ -63,8 +63,8 @@ Dans le code suivant j'utilise l'objet event et la classe FormData pour former u
         event.preventDefault();
 
         const formData = new FormData(form);
-        console.log(formData.mail);
-        console.log(formData.nom);
+        console.log(formData.get("mail"));
+        console.log(formData.get("nom"));
         console.log(formData);
     });
 </script>
