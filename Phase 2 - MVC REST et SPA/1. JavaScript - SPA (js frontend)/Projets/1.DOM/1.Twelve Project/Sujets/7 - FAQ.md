@@ -27,9 +27,9 @@ const premier = conteneur.firstElementChild;
 const dernier = conteneur.lastElementChild;
 
 // Récupérer l'element suivant au premier
-const deuxieme = premier.nextElementSibiling;
+const deuxieme = premier.nextElementSibling;
 // Récupérer l'element precedent au dernier
-const troiseme = dernier.previousElementSibiling;
+const troiseme = dernier.previousElementSibling;
 
 ```
 # Cahier des charges
