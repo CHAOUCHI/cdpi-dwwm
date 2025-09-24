@@ -1,8 +1,6 @@
 # Anti-sèche Fetch - à retenir
 
-
-
-### Récupérer du JSON
+## Récupérer du JSON
 - La fonction `fetch` renvoie une `Promise`.
 - Si le serveur renvoie le body HTTP au format JSON, j'utilise la fonction `response.json()` dans le premier `then()` pour le transformer en variable JavaScript.
 - Les données promises sont disponibles dans le deuxième `then()`.
