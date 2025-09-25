@@ -1,32 +1,37 @@
-# TODOList Localstorage
+# TODOList LocalStorage
 
 Une application web pour lister et suivre les choses à faire.
 
-## Qu'est ce qu'une tâche ?
+## Qu'est-ce qu'une tâche ?
 
-Une tâche est une chose à faire, elle est contient plusieurs infos
+Une tâche est une chose à faire, elle contient plusieurs informations :
 
 - un titre
 - une description 
-- une case cochable (checkbox) pour valider la tâche comme faite.
+- une case à cocher (checkbox) pour valider la tâche comme faite
 - un bouton (poubelle) pour supprimer une tâche
-- un bouton voir plus qui affiche la description dans un menu déroulant.
+- un bouton "voir plus" qui affiche la description dans un menu déroulant
 
 ## Comment ajouter une tâche
-Il faut appuier sur le bouton AJOUTER UNE Tache pour ajouter une nouvelle tâche.
+
+Il faut appuyer sur le bouton "AJOUTER UNE Tâche" pour ajouter une nouvelle tâche.
+
+## FORK ET CLONE TEMPLAET REPO
+Le template du projet vous devez le fork et le cloner : https://github.com/CHAOUCHI/todolist-template
+
 ## Proposition de maquette
 
-### Lien proto figma intéractif 
+### Lien proto Figma interactif 
 https://www.figma.com/proto/e4qUHkuVIG9kX9MaqR6tJW/Untitled?node-id=101-10&t=t8VKEBFTkTtxBZVB-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=101%3A10
 
 ### Maquettes
 
-### Version Simpliste
+#### Version simpliste
 ![alt text](image-3.png)
-
 
 #### BONUS Accueil
 ![alt text](image.png)
+
 #### BONUS Formulaire d'ajout de tâche
 ![alt text](image-1.png)
 
@@ -34,29 +39,28 @@ https://www.figma.com/proto/e4qUHkuVIG9kX9MaqR6tJW/Untitled?node-id=101-10&t=t8V
 
 ### 1. Version simpliste
 
-Le cahier des charges ci-dessous contient tout les détail du projet.
+Le cahier des charges ci-dessous contient tous les détails du projet.
 
-Dans un premier temps vous devez faire la version simpliste :
+Dans un premier temps, vous devez faire la version simpliste :
 ![alt text](image-3.png)
-
 
 http://localhost:9090/11%20-%20todolist/
 
 ### 2. Version complète
 
-L'application est une Single Page Application (SPA), c'est à dire qu'elle ne possède qu'une page `index.html` c'est grâce à votre maitrise du DOM que vous allez pouvoir modifier l'affichage :) .
+L'application est une Single Page Application (SPA), c'est-à-dire qu'elle ne possède qu'une page `index.html`. C'est grâce à votre maîtrise du DOM que vous allez pouvoir modifier l'affichage :) .
 
-|Taches|Description|Cas critique|
-|-|-|-|
-|Formulaire d'ajout de tâche| Une tâche est faite d'un titre, d'une description, d'une case cochable pour valider la tâche et d'un bouton supprimé et d'une date de création | Les tâches ajoutés doivent être stockées dans le localStorage sous la forme d'un tableau JSON pour permettre aux tâches d'être sauvegarder |
-| Afficher les tâches| Afficher toutes les tâches contenu dans le localStorage| Affichage des tâches au chargement de la page et mise à jour des taches quand une tâche est ajoutés|
-| Version mobile| La version mobile est prioritaire et doit être faite en premier |
-| UX |  - Le formulaire d'ajout apparait en slide in comme dans le proto figma <br> - Le bouton ajouter doit toujours être visible |
-| Valider une tache| Si l'utilisateur valide une tache ses changement doivent être répercuté dans le localStorage |
+| Tâches | Description | Cas critique |
+| - | - | - |
+| Formulaire d'ajout de tâche | Une tâche est composée d'un titre, d'une description, d'une case à cocher pour valider la tâche, d'un bouton supprimer et d'une date de création | Les tâches ajoutées doivent être stockées dans le localStorage sous la forme d'un tableau JSON pour permettre aux tâches d'être sauvegardées |
+| Afficher les tâches | Afficher toutes les tâches contenues dans le localStorage | Affichage des tâches au chargement de la page et mise à jour des tâches quand une tâche est ajoutée |
+| Version mobile | La version mobile est prioritaire et doit être faite en premier |
+| UX | - Le formulaire d'ajout apparaît en slide-in comme dans le proto Figma <br> - Le bouton ajouter doit toujours être visible |
+| Valider une tâche | Si l'utilisateur valide une tâche, ses changements doivent être répercutés dans le localStorage |
 | (BONUS) Barre de recherche | Ajouter une barre de recherche pour afficher uniquement les tâches qui contiennent le texte tapé |
-| (BONUS) Trier par date | L'utilisateur doit pouvoir trier dans de la tâches la plus vieille à la plus récente et inversement |
-| (BONUS)Epingler une tache | Ajouter un icone épingle sur chaque tache pour les fiare apparaitre en haut de la page par défaut et les mettre en avant | Il faut pouvoir épingler et désépingler une tâche |
-| (BONUS)Trie par # Tag | Chaque tache peut avoir un ou plusieurs hashtag lors de la création. Il faut pouvoir trier les tâches par hashtag comme sur youtube |  |
+| (BONUS) Trier par date | L'utilisateur doit pouvoir trier les tâches de la plus vieille à la plus récente et inversement |
+| (BONUS) Épingler une tâche | Ajouter une icône épingle sur chaque tâche pour les faire apparaître en haut de la page par défaut et les mettre en avant | Il faut pouvoir épingler et désépingler une tâche |
+| (BONUS) Trier par # Tag | Chaque tâche peut avoir un ou plusieurs hashtags lors de la création. Il faut pouvoir trier les tâches par hashtag comme sur YouTube |  |
 
 *Exemple de hashtag*
 ![alt text](image-2.png)
@@ -65,58 +69,57 @@ L'application est une Single Page Application (SPA), c'est à dire qu'elle ne po
 
 ## Annexe localStorage et JSON Array
 
-La plupart des base de données sont des tableaux, ici des tableaux de tâches.
+La plupart des bases de données sont des tableaux, ici des tableaux de tâches.
 
-Il est possible d'enregistrer une liste JS dans le localstorage très facilement grâce au format JSON.
+Il est possible d'enregistrer une liste JS dans le localStorage très facilement grâce au format JSON.
 
 ### Enregistrer les données
 
-La fonction JSON.stringfy permet de transformer n'importe qu'elle variable JavaScript en une string.
+La fonction `JSON.stringify` permet de transformer n'importe quelle variable JavaScript en une chaîne de caractères.
 
 ```js
 const fruits = [
-    "pomme",
-    "cassis",
-    "framboise"
+    {"name":"pomme","color":"rouge"},
+    {"name":"banane","color":"jaune"},
+    {"name":"kiwi","color":"vert"},
 ];
 
 const fruitsJSON = JSON.stringify(fruits);
 
-console.log(fruitsJSON); // J'ai une string
+console.log(fruitsJSON); // J'ai une string JSON qui représente mon tableau
 
-// J'ajoute la string au localstorage sous le nom "fruits"
-localStorage.setItem("fruits",fruitsJSON);
+// J'ajoute la string au localStorage sous le nom "fruits"
+localStorage.setItem("fruits", fruitsJSON);
 ```
-Rendez-vous dans Inspecter>Storage>localStorage pour voir votre tableau enregistré sous la forme d'une string JSON.
+Rendez-vous dans Inspecter > Storage > localStorage pour voir votre tableau enregistré sous la forme d'une string JSON.
 
 ### Récupérer les données
-La fonction JSON.parse permet de transformer une string JSON en variable javascript
 
+La fonction `JSON.parse` permet de transformer une string JSON en variable JavaScript.
 
 ```js
 const fruitsJSON = localStorage.getItem("fruits");
 
-if(fruitsJSON != null){
+if (fruitsJSON != null) {
     const fruits = JSON.parse(fruitsJSON);
-}else{
-    console.log("item fruits unknow");
+} else {
+    console.log("item fruits unknown");
 }
 ```
 
-### Encapluser dans un getter et setter
+### Encapsuler dans un getter et setter
 
-Une application à régulièrement besoin d'accéder à une BDD. Il est donc d'usage de créer au moins deux fonction getter (récupérer) et setter(ajouter)
+Une application a régulièrement besoin d'accéder à une BDD. Il est donc d'usage de créer au moins deux fonctions : getter (récupérer) et setter (ajouter).
 
-
-*une fonction getter*
+*Une fonction getter*
 ```js
 /**
- * Return the fruits or null if the database is not defined
+ * Retourne les fruits ou un tableau vide si la base de données n'est pas définie
  */ 
-function getAllFruits(){
+function getAllFruits() {
     const fruitsJSON = localStorage.getItem("fruits");
 
-    if(fruitsJSON == null) return null;
+    if (fruitsJSON == null) return [];
     
     const fruits = JSON.parse(fruitsJSON);
 
@@ -124,23 +127,22 @@ function getAllFruits(){
 }
 ```
 
-*une fonction setter*
+*Une fonction setter*
 ```js
-function addFruit(newFruit){
-    const fruitsJSON = localStorage.getItem("fruits");
-
-    if(fruitsJSON == null) return null;
+function addFruit(newFruit) {
+    const fruitsJSON = localStorage.getItem("fruits") ?? "[]";
+    // si fruitsJSON est null j'utilise une string JSON vide "[]"
     
     const fruits = JSON.parse(fruitsJSON);
     fruits.push(newFruit);
 
-    localStorage.setItem("fruits",JSON.stringify(fruits));
+    localStorage.setItem("fruits", JSON.stringify(fruits));
 
     return;
 }
 ```
 
-Ici je n'ai fais que deux fonctions mais il est habituel de créer plusieurs fonctions plus ou moins spécifiques pour former un CRUD (Create, Read, Update, Delete).
+Ici, je n'ai fait que deux fonctions mais il est habituel de créer plusieurs fonctions plus ou moins spécifiques pour former un CRUD (Create, Read, Update, Delete).
 ```
 - getFruitByName(name){}
 - getFruitById(id){}
@@ -148,11 +150,40 @@ Ici je n'ai fais que deux fonctions mais il est habituel de créer plusieurs fon
 - deleteFruitById(id){}
 - ...
 ```
+## Annexe Tableau de Tasks
+
+Je vous recommande de créer un tableau de tâches avec la structure suivante :
+
+```js
+const task = {
+    title : "Titre de la tâche",
+    description : "Description de la tâche",
+    done : false // true si la tâche est faite
+}
+```
+
+Et d'utiliser les fonctions suivantes pour manipuler le tableau de tâches dans le localStorage :
+
+```js
+function getAllTasks() {
+    const tasksJSON = localStorage.getItem("tasks") ?? "[]";
+    const tasks = JSON.parse(tasksJSON);
+    return tasks;
+}
+
+function addTask(newTask) {
+    const tasks = getAllTasks();
+    tasks.push(newTask);
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+    return;
+}
+```
 
 
 ## Annexe Architecture orientée Composant
-Je recommande d'adopter une architecture orientée composants, c'est-à-dire créer des fonctions qui renvoient des Node en utilisant les balises `templates`. 
 
-Vous trouverez ici un repo qui vous décrit une proposition d'architecture logicielle.
+Je recommande d'adopter une architecture orientée composants, c'est-à-dire créer des fonctions qui renvoient des Node en utilisant les balises `template`. 
+
+Vous trouverez ici un repo qui vous décrit une proposition d'architecture logicielle :
 
 https://github.com/CHAOUCHI/VanillaJS-Component-Oriented.git
