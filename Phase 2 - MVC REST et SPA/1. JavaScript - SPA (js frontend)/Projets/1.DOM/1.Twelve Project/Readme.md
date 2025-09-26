@@ -11,12 +11,21 @@ Il est obligatoire de forker ce repository et de le cloner en local pour faire l
 
 Template du projet : https://github.com/CHAOUCHI/cdpi-dwwm-p2-module-js-dom-twelve-projet
 
+1. Une fois clonez démarrez un serveur python pour voir tout les dossiers du projets dans le navigateur:
+
+```bash
+python3 -m http.server 8001
+```
+
+2. Rendez vous sur http://localhost:8001 pour voir vos projets;
 
 ## Pré-requis
 Les twelve projet sont lié au cours DOM car il vous demanderons d'intéragir en JavaScript avec :
 - Le Contenu HTML (texte ou balises enfants)
 - Les attributs HTML (src, href, class, id, data-*)
 - Les évènements (click, scroll, ...)
+
+
 
 ## Démo des projets
 
@@ -25,5 +34,10 @@ Les twelve projet sont lié au cours DOM car il vous demanderons d'intéragir en
 ```
 docker run -p 9090:80 --name twelve-project chaouchi/twelve-prod
 ```
+
+> Si vous rallumez votre ordinateur le container se sera fermé, ne refaite pas run mais plutot start
+> ```
+> docker start twelve-project
+> ```
 
 2. Ouvrez votre navigateur et allez à l'adresse http://localhost:9090 et consultez les projets à réaliser.
