@@ -1,18 +1,20 @@
 # Projet 4 - Menu burger
-## Le Besoin
-Concevoir un menu burger qui fait apparaitre un menu de navigation full screen par la droite.
 
-![alt text](image-4.png)
+## Besoin
+Concevoir un menu burger qui fait apparaître un menu de navigation en plein écran depuis la droite.
 
-![alt text](image-5.png)
+![Menu burger fermé](image-4.png)
+
+![Menu burger ouvert](image-5.png)
 
 ## Pré-requis
-- CSS transition
-- DOM Evenement
+- Transitions CSS
+- Événements DOM
 
 # Cahier des charges
-|Tâches| Description | Contraintes |
-|---|---|---|
-| Header | Mettre en place un header avec un icon burger |
-| Navigation | Mettre en place un menu de navigation full-screen |
-| Apparition du menu au clic | Mettre en place l'apparation du menu via une animation de slide lorsque l'utilisateur clic sur l'icone burger | L'icone burger doit devenir une croix |
+
+| Tâches                       | Description                                                                 | Contraintes                                 |
+|------------------------------|-----------------------------------------------------------------------------|---------------------------------------------|
+| Header                       | Mettre en place un header avec une icône burger                             |                                             |
+| Navigation                   | Mettre en place un menu de navigation en plein écran                        |                                             |
+| Apparition du menu au clic   | Faire apparaître le menu via une animation de slide lorsque l'utilisateur clique sur l'icône burger | L'icône burger doit devenir une croix        |

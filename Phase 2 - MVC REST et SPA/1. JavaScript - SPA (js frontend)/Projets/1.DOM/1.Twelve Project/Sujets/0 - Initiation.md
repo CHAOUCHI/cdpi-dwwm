@@ -1,24 +1,24 @@
 # Projet - Compteur JavaScript
-**Besoin** : Créer un compteur de clic en JavaScript.
+**Besoin** : Créer un compteur de clics en JavaScript.
 
 ## Pré-requis
 ### Le DOM
-Selectionner une balise 
+Sélectionner une balise  
 ```js
 const balise = document.querySelector(cssSelector);
 ```
-Modifier le contenu textuel d'une balise
+Modifier le contenu textuel d'une balise  
 ```js
 balise.innerText = "Nouveau texte";
 ```
 
-Réagir à un évenement - *click*
+Réagir à un événement - *click*  
 ```js
-balise.addEventListener("click",onClicSurBalise);
+balise.addEventListener("click", onClicSurBalise);
 // ou
 balise.onclick = onClicSurBalise;
 
-function onClicSurBalise(){ /* Faire quelque chose... */ }
+function onClicSurBalise() { /* Faire quelque chose... */ }
 ```
 
 ## HTML de départ
@@ -31,7 +31,7 @@ function onClicSurBalise(){ /* Faire quelque chose... */ }
     <title>Compteur JS</title>
 </head>
 <body>
-    <h1>Compteur de clic</h1>
+    <h1>Compteur de clics</h1>
     <button class="btn-counter">+1</button>
     <p>Valeur du compteur : <span class="value-counter">0</span></p>
 </body>
@@ -45,8 +45,9 @@ function onClicSurBalise(){ /* Faire quelque chose... */ }
 ```
 
 # Cahier des charges
-|Tâches| Description | Contraintes |
+| Tâches | Description | Contraintes |
 |---|---|---|
-| Affichage | Integration d'une page HTML qui contient un bouton d'incmentation du compteur et un texte qui affiche la valeur de la variable de compteur.  | 
-| Bouton + | Le bouton HTML incremente une variable de compteur.|
-| Mise à jour du compteur | Mettre à jour l'affichage du compteur lors ce que la variable de compteur augemente.
+| Affichage | Intégration d'une page HTML qui contient un bouton d'incrémentation du compteur et un texte qui affiche la valeur de la variable compteur. | |
+| Bouton + | Le bouton HTML incrémente une variable compteur. | |
+| Mise à jour du compteur | Mettre à jour l'affichage du compteur lorsque la variable compteur augmente. | |
+

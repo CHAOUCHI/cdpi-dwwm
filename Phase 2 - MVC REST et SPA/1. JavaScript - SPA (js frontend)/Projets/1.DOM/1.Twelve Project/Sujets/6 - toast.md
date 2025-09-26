@@ -1,25 +1,27 @@
 # Projet 6 - Toast
+
 ## Le Besoin
-Faire apparaitre d'un notification type toast lors du clique sur le bouton enregistrer
+Faire apparaître une notification de type toast lors du clic sur le bouton "Enregistrer".
 
 ![alt text](image-8.png)
 
 ## Pré-requis
+
 ### Le DOM
-#### Créer un element HTML dynamiquement 
-Ce passe en 3 étapes : la création, la customisation et l'affichage.
 
-Exemple : 
+#### Créer un élément HTML dynamiquement
+Cela se passe en 3 étapes : la création, la personnalisation et l'affichage.
+
+Exemple :
 ```js
-
 const section = document.querySelector(".hero-section");
 
 // Création de la balise
 const nouvelleBalise = document.createElement("p");
 
-// Customisation de la balise
+// Personnalisation de la balise
 nouvelleBalise.classList.add("text_content");
-nouvelleBalise.innerText = "Je suis un paragraphe crée dynamique en JS !";
+nouvelleBalise.innerText = "Je suis un paragraphe créé dynamiquement en JS !";
 
 // Affichage de la nouvelle balise en tant qu'enfant de la section.
 section.appendChild(nouvelleBalise);
@@ -27,9 +29,11 @@ section.appendChild(nouvelleBalise);
 // Destruction d'une balise
 nouvelleBalise.remove();
 ```
+
 # Cahier des charges
-|Tâches| Description | Contraintes |
+
+| Tâches | Description | Contraintes |
 |---|---|---|
-| Intégrer la page HTML | Intégrer une page HTML qui contient un texte "Projet Toast" et un bouton "Enregistrer| Les elements doivent être centré au millieu de l'écran. |
-| Apparition d'un toast | Faire apparaitre un toast disant "Le fichier a bien été enregistré" lors du clique sur le bonton enregistrer | Le toast apparait en dessous du bouton enregistrer sans permturber l'affichage de la page |
-| Dispariton du toast | Le toast disparait au bout de quelques secondes ou lorsque l'on clic dessus. | La disparition se fait avec une animation fade-out.
+| Intégrer la page HTML | Intégrer une page HTML qui contient un texte "Projet Toast" et un bouton "Enregistrer" | Les éléments doivent être centrés au milieu de l'écran. |
+| Apparition d'un toast | Faire apparaître un toast disant "Le fichier a bien été enregistré" lors du clic sur le bouton "Enregistrer" | Le toast apparaît en dessous du bouton "Enregistrer" sans perturber l'affichage de la page. |
+| Disparition du toast | Le toast disparaît au bout de quelques secondes ou lorsque l'on clique dessus. | La disparition se fait avec une animation fade-out. |
