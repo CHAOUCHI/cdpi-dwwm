@@ -6,8 +6,8 @@ Créer le front-end d'un formulaire de contact en JavaScript ainsi que ses messa
 ![alt text](image-12.png)
 
 ## Pré-requis
-- la condition `if`
-- Récupérer la longueur d'une string
+- La condition `if`
+- Récupérer la longueur d'une chaîne de caractères
 ```js
 const prenom = "Massinissa";
 prenom.length        // Nombre de caractères
@@ -26,7 +26,7 @@ formulaire.addEventListener("submit", function(event){
 
     /**
      * Traite le contenu du formulaire ...
-     * */
+     */
 });
 ```
 L'événement `submit` se produit **UNIQUEMENT** sur les balises `form` lorsque l'utilisateur clique sur un bouton de type submit ou appuie sur la touche entrée.
@@ -52,7 +52,7 @@ Dans le code suivant, j'utilise l'objet event et la classe FormData pour former 
     <form action="">
         <input type="email" name="mail" id="">
         <input type="text" name="nom" id="">
-        <button type="submit">submit</button>
+        <button type="submit">Envoyer</button>
     </form>
 </body>
 <script>
@@ -97,7 +97,7 @@ Je le fais comme ceci :
     <form action="">
         <input type="email" name="mail" id="">
         <input type="text" name="nom" id="">
-        <button type="submit">submit</button>
+        <button type="submit">Envoyer</button>
     </form>
 </body>
 <script>
@@ -113,7 +113,7 @@ Je le fais comme ceci :
         console.log(formData.get("mail"));
         console.log(formData.get("nom"));
 
-        // Ici je pourrais par exemple faire une requête HTTP pour demander un jeton d'authentification à mon serveur avec la fonction fetch().
+        // Ici, je pourrais par exemple faire une requête HTTP pour demander un jeton d'authentification à mon serveur avec la fonction fetch().
     }
 </script>
 </html>
@@ -136,7 +136,7 @@ La fonction utilise le concept de regex, qui est un langage de parsing de texte 
 Rendez-vous sur le site web regex101 si vous avez besoin d'apprendre les regex.
 ```js
 /**
- * Renvoie vrai si la string email passée en paramètre correspond à une adresse email valide.
+ * Renvoie vrai si la chaîne email passée en paramètre correspond à une adresse email valide.
  */
 function isValidEmail(email){
     const emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; // Création d'un objet RegExp

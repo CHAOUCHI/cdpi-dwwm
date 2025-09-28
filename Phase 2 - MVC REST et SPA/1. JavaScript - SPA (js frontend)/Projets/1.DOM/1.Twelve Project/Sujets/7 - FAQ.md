@@ -1,13 +1,13 @@
 # Projet 7 - FAQ
 
-## Le Besoin
-Créer un élément de type FAQ qui cache du contenu par tiroir.
+## Le besoin
+Créer un élément de type FAQ qui affiche ou masque du contenu sous forme de tiroirs.
 
 ![alt text](image-9.png)
 
 ## Pré-requis
 - L'événement *click*
-- Modifier les classes CSS dynamiquement
+- Modifier dynamiquement les classes CSS
 - Sélectionner des balises sœurs et enfants
 
 ```html
@@ -15,7 +15,7 @@ Créer un élément de type FAQ qui cache du contenu par tiroir.
     <p>1er élément</p>
     <p>2ème élément</p>
     <p>3ème élément</p>
-    <p>dernier élément</p>
+    <p>Dernier élément</p>
 </div>
 ```
 
@@ -36,6 +36,6 @@ const troisieme = dernier.previousElementSibling;
 ## Cahier des charges
 | Tâches | Description | Contraintes |
 |---|---|---|
-| Intégrer trois questions FAQ composées de la question et d'un texte de réponse | Créer une structure FAQ avec trois questions et leurs réponses | Respecter la structure HTML et l'interactivité demandée |
-| Faire apparaître la réponse au clic de la question correspondante | Afficher ou masquer la réponse associée à chaque question lors d'un clic | Utiliser les événements et la manipulation du DOM |
+| Intégrer trois questions FAQ composées d'une question et d'un texte de réponse | Créer une structure FAQ avec trois questions et leurs réponses | Respecter la structure HTML et l'interactivité demandée |
+| Faire apparaître la réponse au clic sur la question correspondante | Afficher ou masquer la réponse associée à chaque question lors d'un clic | Utiliser les événements et la manipulation du DOM |
 

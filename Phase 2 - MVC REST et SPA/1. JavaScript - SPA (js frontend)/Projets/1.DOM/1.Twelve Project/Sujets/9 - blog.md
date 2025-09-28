@@ -1,11 +1,11 @@
 # Projet 9 - Blog
 
-## Le Besoin
+## Le besoin
 Afficher dynamiquement le contenu d'une base de données. Ces données sont des articles de blog.
 
 ![alt text](image-11.png)
 
-## Pré-requis
+## Prérequis
 - CSS Grid
 - La boucle for
 - Savoir créer dynamiquement des balises HTML en JS
@@ -14,7 +14,7 @@ Afficher dynamiquement le contenu d'une base de données. Ces données sont des 
 | Tâches | Description | Contraintes |
 |---|---|---|
 | Intégrer le conteneur d'articles en HTML/CSS | Créer la structure et le style du conteneur qui accueillera les articles. | Respecter les bonnes pratiques HTML/CSS |
-| Remplir le conteneur d'articles avec les données. | Chaque article doit respecter le schéma : titre cliquable, description, tags. | Utiliser le tableau de données fourni |
+| Remplir le conteneur d'articles avec les données | Chaque article doit respecter le schéma : titre cliquable, description, tags. | Utiliser le tableau de données fourni |
 
 # La base de données
 Copiez ce tableau d'objets dans votre code et utilisez-le comme une base de données. Le plus souvent, les serveurs envoient un tableau d'objets comme celui-ci pour formater les données d'une BDD.
