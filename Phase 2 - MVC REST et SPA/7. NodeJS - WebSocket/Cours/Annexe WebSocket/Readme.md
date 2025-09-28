@@ -14,7 +14,7 @@ npm install ws
 ```js
 import WebSocket from "ws";
 
-// const wsServer = new WebSocket()
+const wsServer = new WebSocket()
 ```
 
 ## Connecter un socket client 

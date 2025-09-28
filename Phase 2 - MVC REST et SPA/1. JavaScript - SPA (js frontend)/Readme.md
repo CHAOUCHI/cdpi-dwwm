@@ -20,18 +20,18 @@ Voyez la démo sur `localhost:9090` avec la commande suivante :
 docker run -p 9090:80 --name twelve-project chaouchi/twelve-prod
 ```
 
-## 4. Projet/Todolist
-Le projet todolist est un projet pour apprendre à gérer un formulaire en JS et l'enregistrement d'un tableau d'objet dans le localStorage du navigateur. Du stockage coté client donc (pas besoin de serveur MySQL toutes les tâches sont stockés dans le navigateur).
+<!-- ## 4. Projet/Todolist
+Le projet todolist est un projet pour apprendre à gérer un formulaire en JS et l'enregistrement d'un tableau d'objet dans le localStorage du navigateur. Du stockage coté client donc (pas besoin de serveur MySQL toutes les tâches sont stockés dans le navigateur). -->
 
-## 5. Cours/Fetch
+## 4. Cours/Fetch
 Consulter le cours Fetch pour apprendre à faire des requêtes HTTP en JS. Vous pourrez ainsi concevoir votre front-end de façon autonome du back-end et utiliser les serveur web public (API REST publique) pour vos projets.
 
 
-## 6. Projet/Pokedex
+## 5. Projet/Pokedex
 Un projet pour apprendre à faire des requêtes HTTP en JS avec l'API REST https://pokebuildapi.fr/api/v1.
 
-## 7. Projet/Meteo
-Un projet un peu plus complexe qui utilise la geolocation pour afficher la météo en fonction de la position actuelle de l'utilisateur. 
+## 6. Projet/Meteo
+Un projet un peu plus complexe qui utilise la geolocation pour afficher la météo en fonction de la position actuelle de l'utilisateur.
 
 - Récupérer la position de l'utilisateur avec l'API Geolocation
 - Faire une requête HTTP avec Fetch à l'API Open-Meteo pour récupérer la météo en fonction de la position : https://open-meteo.com/en/docs/historical-forecast-api
