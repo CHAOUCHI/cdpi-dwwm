@@ -15,6 +15,9 @@ tableauDeBalise.forEach(function(balise){
 });
 ```
 
+> N'oubliez pas que `cssSelector` est une chaine de caractère qui représente un selecteur CSS valide.
+> Par exemple pour selectionner toutes les balises qui ont la classe `darkmode` il faut écrire `.darkmode` **AVEC LE POINT AU DEBUT !**
+
 ## Le selecteur universelle `*`
 
 Vous pouvez selectionner toutes les balises HTML d'une page avec le selecteur universelle `*` en CSS.
