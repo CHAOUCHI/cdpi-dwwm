@@ -2,7 +2,7 @@
 
 
 # Ressources 
-## W3Shcools
+## W3Schools
 W3Schools est un site web éducatif pour apprendre la développement d'application (pas uniquement le developpement web d'ailleurs).
 
 > Il y a même des cours sur le machine learning et l'intelligence artificielle.
