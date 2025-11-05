@@ -315,7 +315,7 @@ Nous voulons donc accéder au body sous la forme d'un attribut de l'objet reques
 ```js
 app.post("/user",(request,response)=>{
     const user = request.body;
-    res.json(user); // Je veux renvoyer l'utilisateur au client.
+    response.json(user); // Je veux renvoyer l'utilisateur au client.
 });
 ```
 
@@ -331,7 +331,7 @@ Si le client envoi un objet JSON en body d'une requête POST dans Postman et que
 app.post("/user",(request,response)=>{
     const user = request.body; 
     console.log(user);  // undefined
-    res.json(user); 
+    response.json(user); 
 });
 ```
 ![alt text](image-2.png)
@@ -347,7 +347,7 @@ app.use(express.json());
 app.post("/user",(request,response)=>{
     const user = request.body; 
     console.log(user);  // {...} un objet JS
-    res.json(user); 
+    response.json(user); 
 });
 ```
 
