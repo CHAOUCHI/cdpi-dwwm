@@ -2,6 +2,10 @@
 
 Cette application permet de rechercher, consulter et gérer des films et leurs diffusions. Chaque film possède des informations détaillées et peut être associé à plusieurs diffusions.
 
+# Fork du template
+1. Forkez le dépôt GitHub du projet de base.
+`https://github.com/CHAOUCHI/module-4-mvc-allocine`
+
 # Diagramme Entity Relation
 
 ```mermaid
@@ -63,10 +67,3 @@ class DiffusionEntity {
 >// string(8) "18:16:16"
 >```
 
-# Repo du MVC de base
-
-***TODO***
-```bash
-git clone https://github.com/username/projet-allocine.git
-cd projet-allocine
-```
