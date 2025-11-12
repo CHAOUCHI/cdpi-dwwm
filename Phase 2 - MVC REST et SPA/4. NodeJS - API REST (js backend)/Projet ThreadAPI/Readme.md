@@ -2,13 +2,21 @@
 ## Description
 API REST pour une application de type réseau social (twitter) permettant aux utilisateurs de s'inscrire, se connecter, créer des posts, commenter.
 
+## Fork du répo template
+```
+https://github.com/CHAOUCHI/module4-nodejs-threadapi
+```
+
+
 ## Technologies utilisées
 - Node.js
 - Express
 - Sequelize
+- CORS
 - JWT pour l'authentification
 - Bcrypt pour le hachage des mots de passe
 - MySQL pour la base de données
+- Postman pour les tests d'API
 
 ## Diagramme de la base de données
 
@@ -51,3 +59,17 @@ erDiagram
 | GET allPosts         | Récupérer la liste de tous les posts avec leurs commentaires.               | Aucun post trouvé          |
 | DELETE commentaire   | Supprimer un commentaire (par son auteur ou un admin).                      | Commentaire inexistant, utilisateur non autorisé                    |
 | DELETE post          | Supprimer un post (par son auteur ou un admin).                             | Post inexistant, utilisateur non autorisé         |
+
+
+## Listes de routes de l'API
+| Méthode | Route               | Description                                      | Protection          |
+|---------|---------------------|--------------------------------------------------|---------------------|
+| POST    | /register           | Inscription d'un nouvel utilisateur              | Non                 |
+| POST    | /login              | Connexion d'un utilisateur                       | Non                 |
+| POST    | /logout             | Déconnexion d'un utilisateur                     | Oui                 |
+| POST    | /posts              | Création d'un nouveau post                       | Oui                 |
+| GET     | /posts              | Récupération de tous les posts avec commentaires | Non                 |
+| POST    | /posts/:postId/comments | Ajout d'un commentaire à un post                  | Oui                 |
+| DELETE  | /posts/:postId      | Suppression d'un post                           | Oui (auteur ou admin)|
+| DELETE  | /comments/:commentId | Suppression d'un commentaire                    | Oui (auteur ou admin)|
+| GET     | /users/:userId/posts | Récupération des posts d'un utilisateur         | Non                 |
