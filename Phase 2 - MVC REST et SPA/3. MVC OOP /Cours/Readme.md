@@ -1,3 +1,0 @@
-- OOP en PHP
-- Composer (autoloader PSR-4, packages)
-- namespaces et use

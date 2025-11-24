@@ -1,8 +1,0 @@
-- Pourquoi l'OOP (démo Earthdefender sans OOP)
-- Classes et instances
-- Propriétés et méthodes
-- Encaplusation
-- Héritage
-- Polymorphisme
-- Interfaces
-- Abstract methods
