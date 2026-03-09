@@ -1,6 +1,6 @@
 # Facturation SaaS - User Stories
 
-## Epic 1 : Cycle de vie des documents
+## Epic 1 : Facturation
 
 - User Story 1 : En tant qu'entrepreneur, je veux créer un facture détaillé pour un client afin de lui proposer une prestation.
 Critères d'acceptation :
@@ -8,7 +8,7 @@ Critères d'acceptation :
     - CA 2 : Le total de la facture est calculé automatiquement en fonction des lignes ajoutées.
     - CA 3 : L'utilisateur doit choisir un client existant ou en créer un nouveau pour associer la facture.
 
-- User Story 2 : En tant qu'entrepreneur, je veux transformer une facture validée en facture pdf en un seul clic afin pour pouvoir le télécharger et l'envoyer au client.
+- User Story 2 : En tant qu'entrepreneur, je veux transformer une facture validée en facture pdf en un seul clic afin de pouvoir le télécharger et l'envoyer au client.
 Critères d'acceptation :
     - CA 1 : Seule une facture validée peut être transformée en facture pdf.
     - CA 2 : La facture pdf doit inclure en bas de page les conditions générales de vente (CGV) de l'entreprise, le SIRET et les conditions de paiement.
@@ -20,7 +20,7 @@ Critères d'acceptation :
     - CA 3 : Les factures "Payées" sont affichées dans une section distincte de celles "En attente de paiement" pour faciliter le suivi.
     - CA 4 : Je veux un message de confirmation avant de marquer une facture comme "Payée" pour éviter les erreurs.
 
-## Epic 2 : Reporting
+## Epic 2 : Statistiques
 
 - User Story 5 : En tant qu'entrepreneur, je veux visualiser mon chiffre d'affaires mensuel sur un graphique afin de suivre la santé de mon entreprise.
 Critères d'acceptation :
@@ -35,9 +35,10 @@ Critères d'acceptation :
 - User Story 6 : En tant qu'entrepreneur, je veux pouvoir générer et envoyer un lien de paiement par mail pour que le client puisse payer la facture.
     - CA 1 : Je peux générer un lien de paiement sécurisé pour chaque facture en attente de paiement.
     - CA 2 : Le lien de paiement doit rediriger le client vers une page de paiement où il peut entrer ses informations de paiement et finaliser la transaction.
-    - CA 3 : Je veux recevoir une notification lorsque le paiement est effectué pour que je puisse mettre à jour le statut de la facture en conséquence.
+    - CA 3 : Je veux recevoir une notification par mail lorsque le paiement est effectué.
     - CA 4 : Le lien de paiement doit être visible sur l'interface de la facture concernée pour que je puisse le copier et l'envoyer manuellement si besoin.
-    - CA 5 : Le mail utiliser pour l'envoie du lien de paiement est celui du client associé à la facture.
+    - CA 5 : Le mail utilisé pour l'envoie du lien de paiement est celui du client associé à la facture.
+    - CA 6 : La facture "en attente de paiement" passe en "payé" dès que le paiement à été effectué.
 
 
 - User Story 7 : En tant qu'entrepreneur, je veux pouvoir relancer un client par mail en cas de non-paiement afin de récupérer les sommes dues.
@@ -45,6 +46,8 @@ Critères d'acceptation :
     - CA 1 : Je peux envoyer un email de relance directement depuis l'interface via un bouton "Relancer" associé à chaque facture en attente de paiement.
     - CA 2 : L'email de relance doit inclure un lien vers la facture concernée au format pdf et l'IBAN de l'entreprise pour faciliter le paiement.
     - CA 3 : Je veux pouvoir personnaliser le message de relance avant de l'envoyer.
+
+- User Story 8 : En tant qu'entrepreneur, je veux pouvoir valider manuellement une facture pour pouvoir définir une facture comme payé si le client a payé via virement ou en espece.
 
 <!-- 
 ## Epic 4 : Gestion des Entités (Nouvel Epic)
