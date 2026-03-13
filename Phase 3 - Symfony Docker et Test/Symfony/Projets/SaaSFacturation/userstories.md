@@ -1,6 +1,33 @@
 # Facturation SaaS - User Stories
+loremloremloremloremloremloremlorem
 
-## Epic 1 : Facturation
+## Objectif pédagogique : le CRUD, les relations SQL simples et l'authentification.
+
+## Lien du répo GitHub à fork
+loremloremlorem
+
+## Critères d'évaluation :
+|Critères|Description|
+|-|-|
+<!-- |MVP|Epic 1 : Gestion des tâches |
+|Respect de la maquette |
+|   Implémentation du diagramme UML pour la BDD|
+| Authorization | Routes privées et publiques|
+| Readme.md Documenter le déploiement | Rédigez un Readme qui explique comment lancer l'application à partir d'un serveur ou d'un PC neuf |
+|V2 (bonus) | Epic 2 : Organisation & Tri | -->
+
+
+## Cahier des charges fonctionnel
+
+### Synopsis
+loremloremlorem
+
+### Maquette
+
+Maquette interactive :
+https://www.figma.com/lorem
+
+### Epic 1 : Facturation
 
 - User Story 1 : En tant qu'entrepreneur, je veux créer un facture détaillé pour un client afin de lui proposer une prestation.
 Critères d'acceptation :
@@ -20,7 +47,7 @@ Critères d'acceptation :
     - CA 3 : Les factures "Payées" sont affichées dans une section distincte de celles "En attente de paiement" pour faciliter le suivi.
     - CA 4 : Je veux un message de confirmation avant de marquer une facture comme "Payée" pour éviter les erreurs.
 
-## Epic 2 : Statistiques
+### Epic 2 : Statistiques
 
 - User Story 5 : En tant qu'entrepreneur, je veux visualiser mon chiffre d'affaires mensuel sur un graphique afin de suivre la santé de mon entreprise.
 Critères d'acceptation :
@@ -30,9 +57,11 @@ Critères d'acceptation :
     - CA 4 : Je veux pouvoir voir le CA mensuel ou annuel en fonction de la période sélectionnée pour une analyse plus détaillée.
     - CA 5 : Le graphique represente le chiffre d'affaires via un graphiques en barre avec le temps sur l'axe des x et le montant du chiffre d'affaires sur l'axe des y.
 
-## Epic 3 : Paiements
+### Epic 3 : Paiements
 
-- User Story 6 : En tant qu'entrepreneur, je veux pouvoir générer et envoyer un lien de paiement par mail pour que le client puisse payer la facture.
+- User Story 6 : En tant qu'entrepreneur, je veux pouvoir valider manuellement une facture pour pouvoir définir une facture comme payé si le client a payé via virement ou en espece.
+
+- User Story 7 : En tant qu'entrepreneur, je veux pouvoir générer et envoyer un lien de paiement par mail pour que le client puisse payer la facture.
     - CA 1 : Je peux générer un lien de paiement sécurisé pour chaque facture en attente de paiement.
     - CA 2 : Le lien de paiement doit rediriger le client vers une page de paiement où il peut entrer ses informations de paiement et finaliser la transaction.
     - CA 3 : Je veux recevoir une notification par mail lorsque le paiement est effectué.
@@ -41,13 +70,13 @@ Critères d'acceptation :
     - CA 6 : La facture "en attente de paiement" passe en "payé" dès que le paiement à été effectué.
 
 
-- User Story 7 : En tant qu'entrepreneur, je veux pouvoir relancer un client par mail en cas de non-paiement afin de récupérer les sommes dues.
+- User Story 8 : En tant qu'entrepreneur, je veux pouvoir relancer un client par mail en cas de non-paiement afin de récupérer les sommes dues.
 Critères d'acceptation :
     - CA 1 : Je peux envoyer un email de relance directement depuis l'interface via un bouton "Relancer" associé à chaque facture en attente de paiement.
     - CA 2 : L'email de relance doit inclure un lien vers la facture concernée au format pdf et l'IBAN de l'entreprise pour faciliter le paiement.
     - CA 3 : Je veux pouvoir personnaliser le message de relance avant de l'envoyer.
 
-- User Story 8 : En tant qu'entrepreneur, je veux pouvoir valider manuellement une facture pour pouvoir définir une facture comme payé si le client a payé via virement ou en espece.
+
 
 <!-- 
 ## Epic 4 : Gestion des Entités (Nouvel Epic)
@@ -73,3 +102,16 @@ CA 2 : L'export contient des informations clés comme le numéro de facture, la 
 CA 3 : Je peux filtrer pour n'exporter que les factures payées.
 Ces ajouts vous rapprocheront d'une solution plus complète comme Henrri, en couvrant le cycle de vente de bout en bout (du devis à la comptabilité) et en améliorant l'efficacité de l'utilisateur. -->
 
+
+
+## Cahier des charges non fonctionnel (technique et implémentation)
+
+## UML
+
+### EntityRelation
+```mermaid
+erDiagram
+User{
+    
+}
+```
