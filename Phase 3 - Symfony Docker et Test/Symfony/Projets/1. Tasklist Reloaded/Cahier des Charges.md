@@ -7,6 +7,8 @@ Le bon vieux Tasklist, c'est le projet CRUD classique idéal pour faire un tour 
 
 ## Objectif pédagogique : le CRUD, les relations SQL simples et l'authentification.
 
+## Lien du répo GitHub à fork
+https://github.com/CHAOUCHI/phase3-symfony-tasklist-reloaded
 
 ## Critères d'évaluation :
 |Critères|Description|
@@ -22,7 +24,6 @@ Le bon vieux Tasklist, c'est le projet CRUD classique idéal pour faire un tour 
 
 ### Synopsis
 Une application de gestion de tâches priorisées et organisées en dossiers. Développée avec Symfony.
-
 
 ### Maquette
 
