@@ -64,7 +64,6 @@ https://www.figma.com/proto/O1CFvazkgkjUsdGpVpozRj/Untitled?node-id=4-823&t=S5Rt
 
 ## Cahier des charges non fonctionnel (technique et implémentation)
 
-
 ## UML
 
 ### EntityRelation

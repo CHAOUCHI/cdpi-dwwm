@@ -1,5 +1,7 @@
 # Facturation SaaS - User Stories
-loremloremloremloremloremloremlorem
+
+
+<!-- Cette application pourrait être mise en ligne pour un accès publique ou hébergé directement par l'auto-entrepreneur si il souhaite éviter la fuite éventuel de leurs données. -->
 
 ## Objectif pédagogique : le CRUD, les relations SQL simples et l'authentification.
 
@@ -9,25 +11,40 @@ loremloremlorem
 ## Critères d'évaluation :
 |Critères|Description|
 |-|-|
-<!-- |MVP|Epic 1 : Gestion des tâches |
+|MVP|Epic 1 Espace utilisateur & Epic 2 Facturation |
 |Respect de la maquette |
 |   Implémentation du diagramme UML pour la BDD|
 | Authorization | Routes privées et publiques|
 | Readme.md Documenter le déploiement | Rédigez un Readme qui explique comment lancer l'application à partir d'un serveur ou d'un PC neuf |
+|BONUS| Les epics 3 & 4 sont des objectifs bonus optionnels|
+
+<!-- |MVP|Epic 1 : Gestion des tâches |
 |V2 (bonus) | Epic 2 : Organisation & Tri | -->
 
 
 ## Cahier des charges fonctionnel
 
 ### Synopsis
-loremloremlorem
+Une application de facturation simpliste à destination des auto-entrepreneurs. Elle permet de suivre son chiffre d'affaires et générer des factures PDF. 
+
+Pas de gestion d'employés néccessaires.
+
+A terme le logiciel permettrait de faire payé les clients directement depuis l'application, cependant cette fonctionnalitée n'est pas prioritaire car la plupart des clients effectue un virement directement sur le compte bancaire présent dans la facture.
 
 ### Maquette
 
 Maquette interactive :
 https://www.figma.com/lorem
 
-### Epic 1 : Facturation
+### MVP Epic 1 : Espace utilisateur
+
+- User Story 1 : En tant qu'entrepreneur, je veux pouvoir créer mon compte sur l'application pour accéder et administrer mes informations professionelles.
+    - CA 1 : Je peux modifier ma raison sociale (le nom de mon entreprise)
+    - CA 2 : Je peux modifier mon IBAN pour définir le compte bancaire qui recevra les virements de mes clients.
+    - CA 3 : Je peux me déconnecter pour fermer ma session
+    - CA 4 : Je suis déconnecté automatiquement au bout d'une heure.
+
+### MVP Epic 2 : Facturation
 
 - User Story 1 : En tant qu'entrepreneur, je veux créer un facture détaillé pour un client afin de lui proposer une prestation.
 Critères d'acceptation :
@@ -47,7 +64,24 @@ Critères d'acceptation :
     - CA 3 : Les factures "Payées" sont affichées dans une section distincte de celles "En attente de paiement" pour faciliter le suivi.
     - CA 4 : Je veux un message de confirmation avant de marquer une facture comme "Payée" pour éviter les erreurs.
 
-### Epic 2 : Statistiques
+### Epic 3 : Emailing
+
+- User Story 7 : En tant qu'entrepreneur, je veux pouvoir envoyer la facture par mail pour que le client puisse la payer.
+    - CA 1 : Le mail utilisé pour l'envoie de la facture est celui du client associé à la facture.
+    - CA 2 : La facture "en attente de paiement" passe en "payé" dès que le paiement à été effectué.
+    <!-- - CA 1 : Je peux générer un lien de paiement sécurisé pour chaque facture en attente de paiement. -->
+    <!-- - CA 2 : Le lien de paiement doit rediriger le client vers une page de paiement où il peut entrer ses informations de paiement et finaliser la transaction. -->
+    <!-- - CA 3 : Je veux recevoir une notification par mail lorsque le paiement est effectué. -->
+    <!-- - CA 4 : Le lien de paiement doit être visible sur l'interface de la facture concernée pour que je puisse le copier et l'envoyer manuellement si besoin. -->
+
+- User Story 8 : En tant qu'entrepreneur, je veux pouvoir relancer un client par mail en cas de retard de paiment afin de récupérer les sommes dues.
+Critères d'acceptation :
+    - CA 1 : Je peux envoyer un email de relance directement depuis l'interface via un bouton "Relancer" associé à chaque facture en attente de paiement.
+    - CA 2 : L'email de relance doit inclure la facture concernée en pièce jointe au format pdf et l'IBAN de l'entreprise pour faciliter le paiement.
+    - CA 3 : Je veux pouvoir personnaliser le message de relance avant de l'envoyer.
+    <!-- - CA 4 : Par défaut le message de relance est : "Bonjour, vous êtes en retard de paiement pour la facture  -->
+
+### Epic 4 : Statistiques
 
 - User Story 5 : En tant qu'entrepreneur, je veux visualiser mon chiffre d'affaires mensuel sur un graphique afin de suivre la santé de mon entreprise.
 Critères d'acceptation :
@@ -56,26 +90,6 @@ Critères d'acceptation :
     - CA 3: Le chiffre d'affaires est calculé en faisant la somme des montants des factures "Payées" pour chaque mois.
     - CA 4 : Je veux pouvoir voir le CA mensuel ou annuel en fonction de la période sélectionnée pour une analyse plus détaillée.
     - CA 5 : Le graphique represente le chiffre d'affaires via un graphiques en barre avec le temps sur l'axe des x et le montant du chiffre d'affaires sur l'axe des y.
-
-### Epic 3 : Paiements
-
-- User Story 6 : En tant qu'entrepreneur, je veux pouvoir valider manuellement une facture pour pouvoir définir une facture comme payé si le client a payé via virement ou en espece.
-
-- User Story 7 : En tant qu'entrepreneur, je veux pouvoir générer et envoyer un lien de paiement par mail pour que le client puisse payer la facture.
-    - CA 1 : Je peux générer un lien de paiement sécurisé pour chaque facture en attente de paiement.
-    - CA 2 : Le lien de paiement doit rediriger le client vers une page de paiement où il peut entrer ses informations de paiement et finaliser la transaction.
-    - CA 3 : Je veux recevoir une notification par mail lorsque le paiement est effectué.
-    - CA 4 : Le lien de paiement doit être visible sur l'interface de la facture concernée pour que je puisse le copier et l'envoyer manuellement si besoin.
-    - CA 5 : Le mail utilisé pour l'envoie du lien de paiement est celui du client associé à la facture.
-    - CA 6 : La facture "en attente de paiement" passe en "payé" dès que le paiement à été effectué.
-
-
-- User Story 8 : En tant qu'entrepreneur, je veux pouvoir relancer un client par mail en cas de non-paiement afin de récupérer les sommes dues.
-Critères d'acceptation :
-    - CA 1 : Je peux envoyer un email de relance directement depuis l'interface via un bouton "Relancer" associé à chaque facture en attente de paiement.
-    - CA 2 : L'email de relance doit inclure un lien vers la facture concernée au format pdf et l'IBAN de l'entreprise pour faciliter le paiement.
-    - CA 3 : Je veux pouvoir personnaliser le message de relance avant de l'envoyer.
-
 
 
 <!-- 
@@ -114,4 +128,17 @@ erDiagram
 User{
     
 }
+Client{
+    
+}
+Invoice{
+    
+}
+Product{
+   name
+   prix
+}
+
+
+
 ```
