@@ -1,8 +1,5 @@
 # Facturation SaaS - User Stories
 
-
-<!-- Cette application pourrait être mise en ligne pour un accès publique ou hébergé directement par l'auto-entrepreneur si il souhaite éviter la fuite éventuel de leurs données. -->
-
 ## Objectif pédagogique : le CRUD, les relations SQL simples et l'authentification.
 
 ## Lien du répo GitHub à fork
@@ -125,20 +122,43 @@ Ces ajouts vous rapprocheront d'une solution plus complète comme Henrri, en cou
 ### EntityRelation
 ```mermaid
 erDiagram
-User{
-    
+USER ||--o{ INVOICE : creates
+USER ||--o{ CLIENT : manages
+CLIENT ||--o{ INVOICE : receives
+INVOICE ||--o{ PRODUCT : contains
+INVOICE {
+    int id PK
+    int user_id FK
+    int client_id FK
+    string number
+    string status
+    decimal total
+    datetime created_at
 }
-Client{
-    
+USER {
+    int id PK
+    string email UK
+    string company_name
+    string iban
+    string siret
+    datetime created_at
 }
-Invoice{
-    
+CLIENT {
+    int id PK
+    int user_id FK
+    string name
+    string email
+    string address
+    datetime created_at
 }
-Product{
-   name
-   prix
+PRODUCT {
+    int id PK
+    int invoice_id FK
+    string name
+    string description
+    decimal price
+    int quantity
 }
-
 
 
 ```
