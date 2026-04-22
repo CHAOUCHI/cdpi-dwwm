@@ -30,6 +30,10 @@ Une application de gestion de tâches priorisées et organisées en dossiers. D�
 Maquette interactive :
 https://www.figma.com/proto/O1CFvazkgkjUsdGpVpozRj/Untitled?node-id=4-823&t=S5RtpiUl6nNUacow-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A823&show-proto-sidebar=1
 
+Design :
+https://www.figma.com/design/vVcrHZvaaGQjW3cGWlACnX/TaskListRealodedSymfony--Copy-?node-id=0-1&t=zg2Cf3ze3GZXO7UN-1
+> Utilisez ce lien pour obtenir les valeurs des margins, padding, flex ect.
+
 
 ### Epic 1 : Gestion des tâches
 
@@ -83,7 +87,8 @@ erDiagram
     }
     Priority{
         int id PK
-        string level "UNIQUE"
+        string name "UNIQUE"
+        int importance "UNIQUE"
     }
     Folder{
         int id PK
