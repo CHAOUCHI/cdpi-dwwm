@@ -3,7 +3,7 @@
 ## Objectif pédagogique : le CRUD, les relations SQL simples et l'authentification.
 
 ## Lien du répo GitHub à fork
-loremloremlorem
+https://github.com/CHAOUCHI/phase3-symfony-facturation
 
 ## Critères d'évaluation :
 |Critères|Description|
@@ -11,6 +11,7 @@ loremloremlorem
 |MVP|Epic 1 Espace utilisateur & Epic 2 Facturation |
 |Respect de la maquette |
 |   Implémentation du diagramme UML pour la BDD|
+| Mise en place des issues GitHub pour chaque User Story | Chaque User Story doit être créée en tant qu'issue GitHub avec les critères d'acceptation clairement définis |
 | Authorization | Routes privées et publiques|
 | Readme.md Documenter le déploiement | Rédigez un Readme qui explique comment lancer l'application à partir d'un serveur ou d'un PC neuf |
 |BONUS| Les epics 3 & 4 sont des objectifs bonus optionnels|
