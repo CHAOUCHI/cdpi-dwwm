@@ -15,6 +15,10 @@ loremloremlorem
 | Readme.md Documenter le déploiement | Rédigez un Readme qui explique comment lancer l'application à partir d'un serveur ou d'un PC neuf |
 |BONUS| Les epics 3 & 4 sont des objectifs bonus optionnels|
 
+<!-- |MVP|Epic 1 : Gestion des tâches |
+|V2 (bonus) | Epic 2 : Organisation & Tri | -->
+
+
 ## Cahier des charges fonctionnel
 
 ### Synopsis
@@ -26,11 +30,8 @@ Pas de gestion d'employés nécessaire.
 
 ### Maquette
 
-#### Maquette statique :
-https://www.figma.com/design/tZNL1SBsO5OKWfgpCTJhiY/Sass-facturation?node-id=14-2143&t=yX9R9gCzpx9NKdOA-1
-#### Maquette interactive :
-https://www.figma.com/proto/tZNL1SBsO5OKWfgpCTJhiY/Sass-facturation?node-id=14-2143&t=u0yucPsp3yd38TGT-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=14%3A2143&show-proto-sidebar=1
-
+Maquette interactive :
+https://www.figma.com/lorem
 
 
 
@@ -111,12 +112,18 @@ Critères d'acceptation :
 - User Story 7 : En tant qu'entrepreneur, je veux pouvoir **envoyer la facture par mail** pour que le client puisse la payer.
     - CA 1 : Le mail utilisé pour l'envoi de la facture est celui du client associé à la facture.
     - CA 2 : Le mail contient la facture en pièce jointe au format PDF.
+    <!-- - CA 2 : La facture "en attente de paiement" passe en "payé" dès que le paiement a été effectué. -->
+    <!-- - CA 1 : Je peux générer un lien de paiement sécurisé pour chaque facture en attente de paiement. -->
+    <!-- - CA 2 : Le lien de paiement doit rediriger le client vers une page de paiement où il peut entrer ses informations de paiement et finaliser la transaction. -->
+    <!-- - CA 3 : Je veux recevoir une notification par mail lorsque le paiement est effectué. -->
+    <!-- - CA 4 : Le lien de paiement doit être visible sur l'interface de la facture concernée pour que je puisse le copier et l'envoyer manuellement si besoin. -->
 
 - User Story 8 : En tant qu'entrepreneur, je veux pouvoir **relancer un client par mail** en cas de retard de paiement afin de récupérer les sommes dues.
 Critères d'acceptation :
     - CA 1 : Je peux envoyer un email de relance directement depuis l'interface via un bouton "Relancer" associé à chaque facture en attente de paiement.
     - CA 2 : L'email de relance doit inclure la facture concernée en pièce jointe au format PDF et l'IBAN de l'entreprise pour faciliter le paiement.
     - CA 3 : Je veux pouvoir personnaliser le message de relance avant de l'envoyer.
+    <!-- - CA 4 : Par défaut le message de relance est : "Bonjour, vous êtes en retard de paiement pour la facture  -->
 
 ### Epic 4 : Statistiques
 
@@ -127,6 +134,32 @@ Critères d'acceptation :
     - CA 3: Le chiffre d'affaires est calculé en faisant la somme des montants des factures "Payées" pour chaque mois.
     - CA 4 : Je veux pouvoir voir le CA mensuel ou annuel en fonction de la période sélectionnée pour une analyse plus détaillée.
     - CA 5 : Le graphique représente le chiffre d'affaires via un graphique en barre avec le temps sur l'axe des x et le montant du chiffre d'affaires sur l'axe des y.
+
+
+<!-- 
+## Epic 4 : Gestion des Entités (Nouvel Epic)
+La gestion des clients et des produits est implicite dans vos stories, mais il serait utile de la détailler.
+
+User Story (Gestion Clients) : En tant qu'entrepreneur, je veux avoir un répertoire de mes clients (CRM simple) afin de retrouver facilement leurs informations (contact, adresse, historique des factures).
+
+Critères d'acceptation :
+CA 1 : Je peux créer, voir, modifier et supprimer un client.
+CA 2 : Chaque client a une fiche détaillée avec ses informations et la liste de tous ses documents (devis, factures).
+User Story (Gestion Catalogue) : En tant qu'entrepreneur, je veux gérer un catalogue de mes produits et services afin de les ajouter rapidement à mes devis et factures sans avoir à retaper la description et le prix à chaque fois.
+
+Critères d'acceptation :
+CA 1 : Je peux créer, modifier et supprimer un produit/service dans mon catalogue.
+CA 2 : Lorsque j'ajoute une ligne à une facture/devis, je peux sélectionner un article depuis mon catalogue pour pré-remplir les informations.
+Epic 5 : Comptabilité et Export (Nouvel Epic)
+Pour faciliter la vie de l'entrepreneur, l'export des données pour son comptable est une fonctionnalité clé.
+
+User Story (Export Comptable) : En tant qu'entrepreneur, je veux pouvoir exporter mes données de facturation (factures, paiements) sur une période donnée (ex: par trimestre) dans un format standard (CSV, Excel) afin de les transmettre facilement à mon comptable.
+Critères d'acceptation :
+CA 1 : Je peux sélectionner une plage de dates pour l'export.
+CA 2 : L'export contient des informations clés comme le numéro de facture, la date, le nom du client, le montant HT, le montant de la TVA, et le montant TTC.
+CA 3 : Je peux filtrer pour n'exporter que les factures payées.
+Ces ajouts vous rapprocheront d'une solution plus complète comme Henrri, en couvrant le cycle de vente de bout en bout (du devis à la comptabilité) et en améliorant l'efficacité de l'utilisateur. -->
+
 
 
 ## Cahier des charges non fonctionnel (technique et implémentation)
