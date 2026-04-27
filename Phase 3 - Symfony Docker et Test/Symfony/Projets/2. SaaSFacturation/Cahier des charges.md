@@ -156,6 +156,7 @@ USER {
     string email UK
     string first_name
     string last_name
+    string password
     string company_name
     string iban
     string siret
