@@ -88,6 +88,7 @@ Critères d'acceptation :
     - CA 4 : Je peux enregistrer la facture en brouillon pour la compléter plus tard.
     - CA 5 : Je peux valider la facture une fois qu'elle est complète pour la rendre non modifiable et la préparer à l'envoi au client.
     - CA 6 : Je peux supprimer une facture tant qu'elle est en brouillon, une fois validée elle ne peut plus être supprimée pour des raisons de traçabilité comptable.
+    - CA 7 : Une facture possède un numero unique au format "FACT-YYYYMMDD-N" ou N est le competeur de facture faite dans le mois en cours (ex: FACT-20240115-5 pour la 5ème facture créée en janvier 2024)
 
 - User Story 3 : En tant qu'entrepreneur, je veux pouvoir **voir la liste de mes factures** pour suivre l'état de mes ventes.
 Critères d'acceptation :
@@ -146,25 +147,28 @@ INVOICE {
     int user_id FK
     int client_id FK
     string number
-    string status
-    decimal total
+    enum status
+    float total_ttc
     datetime created_at
 }
 USER {
     int id PK
     string email UK
+    string first_name
+    string last_name
     string company_name
     string iban
     string siret
-    datetime created_at
 }
 CLIENT {
     int id PK
     int user_id FK
     string name
     string email
+    string phone
     string address
-    datetime created_at
+    string siret
+    string rib
 }
 PRODUCT {
     int id PK
@@ -173,5 +177,20 @@ PRODUCT {
     string description
     decimal price
     int quantity
+    enum unit 
+}
+
+ENUM_UNIT {
+    string piece
+    string hour
+    string day
+    string month
+    string year
+}
+
+ENUM_STATUS {
+    string draft
+    string pending_payment
+    string paid
 }
 ```
