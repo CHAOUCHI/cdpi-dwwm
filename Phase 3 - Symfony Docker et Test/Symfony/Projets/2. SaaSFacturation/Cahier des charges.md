@@ -194,3 +194,8 @@ ENUM_STATUS {
     string paid
 }
 ```
+
+
+## Extensions recommandées pour le projet
+- UX ChartJS pour le graphique de l'epic 4: https://symfony.com/bundles/ux-chartjs/current/index.html
+- Symfony Mailer pour l'envoi de mails de l'epic 3 : https://symfony.com/doc/current/mailer.html
