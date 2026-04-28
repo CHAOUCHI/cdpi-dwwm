@@ -141,7 +141,7 @@ erDiagram
 USER ||--o{ INVOICE : creates
 USER ||--o{ CLIENT : manages
 CLIENT ||--o{ INVOICE : receives
-INVOICE ||--o{ PRODUCT : contains
+INVOICE }|--|{ PRODUCT : contains
 INVOICE {
     int id PK
     int user_id FK
