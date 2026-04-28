@@ -136,6 +136,13 @@ Critères d'acceptation :
 ## UML
 
 ### EntityRelation
+
+> **Attention :** ***A propos du Many to Many entre Invoice et Product et du champs quantity:***
+>  - Ici on a many to many entre les factures et les produits, **il faut donc une table de jointure "invoice_item" pour gérer cette relation.**
+> Normalement il suffit de préciser ManyToMany dans symfony console make:entity quand il vous demande le type de champs invoices ou products et symfony fera la table de jointure de façon automatique.
+> - Cependant, dans ce cas précis on a besoin d'ajouter un champ "quantity" à la table de jointure pour pouvoir indiquer la quantité de chaque produit/service dans la facture, du coup **il faut créer l'entité "InvoiceItem" pour gérer cette relation many to many avec des champs supplémentaires (le champs quantity).**
+> - Ensuite faites deux OneToMany/ManyToOne entre Invoice et InvoiceItem d'une part, et Product et InvoiceItem d'autre part plutot qu'un ManyToMany direct entre Invoice et Product.
+
 ```mermaid
 erDiagram
 USER ||--o{ INVOICE : creates
@@ -148,7 +155,7 @@ INVOICE {
     int id PK
     int user_id FK
     int client_id FK
-    string number
+    string number 
     enum status
     float total_ttc
     datetime created_at
@@ -160,7 +167,7 @@ INVOICE_ITEM {
 }
 USER {
     int id PK
-    string email UK
+    string email 
     string first_name
     string last_name
     string password
@@ -184,7 +191,6 @@ PRODUCT {
     string name
     string description
     decimal price
-    int quantity
     enum unit 
 }
 
