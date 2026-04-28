@@ -141,7 +141,9 @@ erDiagram
 USER ||--o{ INVOICE : creates
 USER ||--o{ CLIENT : manages
 CLIENT ||--o{ INVOICE : receives
-INVOICE }|--|{ PRODUCT : contains
+INVOICE ||--o{ INVOICE_ITEM : contains
+INVOICE_ITEM ||--o{ PRODUCT : has
+
 INVOICE {
     int id PK
     int user_id FK
@@ -150,6 +152,11 @@ INVOICE {
     enum status
     float total_ttc
     datetime created_at
+}
+INVOICE_ITEM {
+    int invoice_id FK
+    int product_id FK
+    int quantity
 }
 USER {
     int id PK

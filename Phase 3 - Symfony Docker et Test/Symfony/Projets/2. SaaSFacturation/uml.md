@@ -14,6 +14,11 @@ INVOICE {
     float total_ttc
     datetime created_at
 }
+INVOICE_ITEM {
+    int invoice_id FK
+    int product_id FK
+    int quantity
+}
 USER {
     int id PK
     string email UK
