@@ -1,3 +1,4 @@
+
 ```mermaid
 erDiagram
 USER ||--o{ INVOICE : creates
@@ -22,6 +23,7 @@ USER {
     string company_name
     string iban
     string siret
+    string cgv
 }
 CLIENT {
     int id PK
