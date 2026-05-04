@@ -70,17 +70,17 @@ https://www.figma.com/proto/tZNL1SBsO5OKWfgpCTJhiY/Sass-facturation?node-id=14-2
 ### MVP Epic 2 : Facturation 
 Un système de facturation basique qui permet de créer des factures, les associer à des clients et des produits, et suivre leur statut (brouillon, validée, payée).
 
-- User Story 3 : En tant qu'entrepreneur, je veux **créer un produit/service** pour pouvoir l'ajouter facilement à mes factures.
+- User Story 4 : En tant qu'entrepreneur, je veux **créer un produit/service** pour pouvoir l'ajouter facilement à mes factures.
     - CA 1 : Je peux créer un produit/service en fournissant un nom, une description et un prix unitaire et unité de mesure (heure, jour, pièce).
     - CA 2 : Je peux voir la liste de tous mes produits/services dans une section dédiée de l'application.
     - CA 3 : Je peux modifier ou supprimer un produit/service de mon catalogue.
 
-- User Story 4 : En tant qu'entrepreneur, je veux **ajouter un client** pour pouvoir lui associer mes factures.
+- User Story 5 : En tant qu'entrepreneur, je veux **ajouter un client** pour pouvoir lui associer mes factures.
     - CA 1 : Je peux créer un client en fournissant son nom, son adresse, son email, son numéro de téléphone, son SIRET (optionnel) et son RIB.
     - CA 2 : Je peux voir la liste de tous mes clients dans une section dédiée de l'application.
     - CA 3 : Je peux modifier ou supprimer un client de mon répertoire.
 
-- User Story 5 : En tant qu'entrepreneur, je veux **créer une facture détaillée** pour un client afin de lui proposer une prestation.
+- User Story 6 : En tant qu'entrepreneur, je veux **créer une facture détaillée** pour un client afin de lui proposer une prestation.
 Critères d'acceptation :
     - CA 1 : Je peux ajouter des lignes de produits/services.
     - CA 2 : Le total de la facture est calculé automatiquement en fonction des lignes ajoutées.
@@ -90,18 +90,18 @@ Critères d'acceptation :
     - CA 6 : Je peux supprimer une facture tant qu'elle est en brouillon, une fois validée elle ne peut plus être supprimée pour des raisons de traçabilité comptable.
     - CA 7 : Une facture possède un numero unique au format "FACT-YYYYMMDD-N" ou N est le competeur de facture faite dans le mois en cours (ex: FACT-20240115-5 pour la 5ème facture créée en janvier 2024)
 
-- User Story 6 : En tant qu'entrepreneur, je veux pouvoir **voir la liste de mes factures** pour suivre l'état de mes ventes.
+- User Story 7 : En tant qu'entrepreneur, je veux pouvoir **voir la liste de mes factures** pour suivre l'état de mes ventes.
 Critères d'acceptation :
     - CA 1 : Je peux voir la liste de toutes mes factures avec les informations clés (numéro, client, montant total, statut).
     - CA 2 : Je peux filtrer les factures par statut (en attente de paiement, payée) pour faciliter le suivi.
     - CA 3 : Je peux cliquer sur une facture pour voir les détails de celle-ci (lignes de produits/services, informations du client).
 
-- User Story 7 : En tant qu'entrepreneur, je veux **transformer une facture validée en facture PDF** en un seul clic afin de pouvoir la télécharger et l'envoyer au client moi-même.
+- User Story 8 : En tant qu'entrepreneur, je veux **transformer une facture validée en facture PDF** en un seul clic afin de pouvoir la télécharger et l'envoyer au client moi-même.
 Critères d'acceptation :
     - CA 1 : Seule une facture validée peut être transformée en facture PDF.
     - CA 2 : La facture PDF doit inclure en bas de page les conditions générales de vente (CGV) de l'entreprise, le SIRET et les conditions de paiement.
 
-- User Story 8 : En tant qu'entrepreneur, je veux **marquer une facture comme "Payée"** afin de tenir ma comptabilité à jour.
+- User Story 9 : En tant qu'entrepreneur, je veux **marquer une facture comme "Payée"** afin de tenir ma comptabilité à jour.
 Critères d'acceptation :
     - CA 1 : Je peux marquer une facture comme "Payée" en un clic.
     - CA 2 : Une fois la facture marquée comme "Payée", elle ne peut plus être modifiée.
@@ -110,11 +110,11 @@ Critères d'acceptation :
 
 ### Epic 3 : Emailing
 
-- User Story 9 : En tant qu'entrepreneur, je veux pouvoir **envoyer la facture par mail** pour que le client puisse la payer.
+- User Story 10 : En tant qu'entrepreneur, je veux pouvoir **envoyer la facture par mail** pour que le client puisse la payer.
     - CA 1 : Le mail utilisé pour l'envoi de la facture est celui du client associé à la facture.
     - CA 2 : Le mail contient la facture en pièce jointe au format PDF.
 
-- User Story 10 : En tant qu'entrepreneur, je veux pouvoir **relancer un client par mail** en cas de retard de paiement afin de récupérer les sommes dues.
+- User Story 11 : En tant qu'entrepreneur, je veux pouvoir **relancer un client par mail** en cas de retard de paiement afin de récupérer les sommes dues.
 Critères d'acceptation :
     - CA 1 : Je peux envoyer un email de relance directement depuis l'interface via un bouton "Relancer" associé à chaque facture en attente de paiement.
     - CA 2 : L'email de relance doit inclure la facture concernée en pièce jointe au format PDF et l'IBAN de l'entreprise pour faciliter le paiement.
@@ -122,7 +122,7 @@ Critères d'acceptation :
 
 ### Epic 4 : Statistiques
 
-- User Story 11 : En tant qu'entrepreneur, je veux **visualiser mon chiffre d'affaires mensuel sur un graphique** afin de suivre la santé de mon entreprise.
+- User Story 12 : En tant qu'entrepreneur, je veux **visualiser mon chiffre d'affaires mensuel sur un graphique** afin de suivre la santé de mon entreprise.
 Critères d'acceptation :
     - CA 1 : Le graphique affiche le chiffre d'affaires total pour chaque mois de l'année en cours.
     - CA 2 : Je peux filtrer le graphique par année pour comparer les performances d'une année à l'autre.
