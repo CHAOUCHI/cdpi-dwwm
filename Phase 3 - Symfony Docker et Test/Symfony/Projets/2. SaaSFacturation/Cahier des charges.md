@@ -149,21 +149,23 @@ USER ||--o{ INVOICE : creates
 USER ||--o{ CLIENT : manages
 CLIENT ||--o{ INVOICE : receives
 INVOICE ||--o{ INVOICE_ITEM : contains
-INVOICE_ITEM ||--o{ PRODUCT : has
+INVOICE_ITEM }o--|| PRODUCT : has
+PRODUCT }|--|| CLIENT : has
+USER ||--|{ PRODUCT : creates
 
 INVOICE {
     int id PK
-    int user_id FK
-    int client_id FK
     string number 
     enum status
     float total_ttc
     datetime created_at
+    int user_id FK
+    int client_id FK
 }
 INVOICE_ITEM {
+    int quantity
     int invoice_id FK
     int product_id FK
-    int quantity
 }
 USER {
     int id PK
@@ -177,21 +179,23 @@ USER {
 }
 CLIENT {
     int id PK
-    int user_id FK
     string name
     string email
     string phone
     string address
     string siret
     string rib
+    int user_id FK
 }
+
 PRODUCT {
     int id PK
-    int invoice_id FK
     string name
     string description
-    decimal price
+    float price
     enum unit 
+    int user_id FK
+    int client_id FK
 }
 
 ENUM_UNIT {
