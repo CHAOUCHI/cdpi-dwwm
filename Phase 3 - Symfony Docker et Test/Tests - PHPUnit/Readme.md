@@ -2,17 +2,17 @@
 
 # Test avec PHPUnit
 
-## A quoi servent les Tests ?
+## À quoi servent les tests ?
 
-Souvent quand on rajoute une feature une autre bug apparait. Vous connaissez deux moyens de vérifier si un nouveau bug est apparu : testerà la main ou le faire tester par un utilistaur. Cependant ces méthodes de tests sont : couteuses en temps et en argent et surtout ABSOLUMENT PAS FIABLES !
+Souvent quand on rajoute une feature, un autre bug apparaît. Vous connaissez deux moyens de vérifier si un nouveau bug est apparu : tester à la main ou le faire tester par un utilisateur. Cependant ces méthodes de tests sont : coûteuses en temps et en argent et surtout ABSOLUMENT PAS FIABLES !
 
-La solution : Ecrire des tests autamatisés pour chaque feature, ces tests vérifie le fonctionnement du logiciel fonctions après fonctions et il effectue cette action au lancement d'une simple ligne de commande linux ! 
+La solution : écrire des tests automatisés pour chaque feature. Ces tests vérifient le fonctionnement du logiciel fonction après fonction et ils effectuent cette action au lancement d'une simple ligne de commande Linux !
 
 ## Documentation
 
 - Symfony : https://symfony.com/doc/current/testing.html
 - PHPUnit : https://docs.phpunit.de/en/13.1/
-- Commande d'assertation : https://docs.phpunit.de/en/13.1/assertions.html
+- Commande d'assertion : https://docs.phpunit.de/en/13.1/assertions.html
 
 ## Ligne de commande
 
@@ -36,16 +36,16 @@ class GeometryService{
 }
 ```
 
-1. Pour fabriquer un test pour mon service j'execute la commande suivante dans mon terminal (choissez l'option Test Case) :
-    - choissez l'option Test Case
+1. Pour fabriquer un test pour mon service, j'exécute la commande suivante dans mon terminal (choisissez l'option Test Case) :
+    - choisissez l'option Test Case
     - Nommez votre test : `ServiceNameTest` (exemple : `GeometryServiceTest`)
 
 ```bash
 symfony console make:test
 ```
 
-> - *Si vous n'injecter aucun service, repo ou autre dans votre test selectionnez : `Unit Test`*
-> - ***Si vous injecter un service**, repo ou autre dans votre test selectionnez : `Test Case`*
+> - *Si vous n'injectez aucun service, répo ou autre dans votre test, sélectionnez : `Unit Test`*
+> - ***Si vous injectez un service**, répo ou autre dans votre test, sélectionnez : `Test Case`*
 
 2. La classe de test suivante est générée :
 
@@ -63,7 +63,7 @@ class GeometryServiceTest extends KernelTestCase
 }
 ```
 
-3. Enfin pour ecrire un test ajouter une méthode public à la classe : 
+3. Enfin, pour écrire un test, ajoutez une méthode publique à la classe : 
     - Le nom de la méthode doit commencer par `test`
 ```php
 <?php
@@ -83,7 +83,7 @@ class GeometryServiceTest extends KernelTestCase
 }
 ```
 
-4. Ensuite dans la méthode vous pouvez faire des assertions(des affirmations) avec la  pour vérifier le bon fonctionnement de votre code.
+4. Ensuite, dans la méthode, vous pouvez faire des assertions (des affirmations) pour vérifier le bon fonctionnement de votre code.
 Ici j'utilise l'assertion `assertEquals` pour vérifier que le résultat de `5*5` est égal à `25` et j'ajoute un message d'erreur qui s'affichera si le test échoue.
 
 ```php
@@ -104,7 +104,7 @@ class GeometryServiceTest extends KernelTestCase
 }
 ```
 
-5. Ce test est inutile car il ne test pas le service pour injecter le service et le rendre diposnible dans la classe de test il faut ajouter un attribut priivate et l'initialiser dans la méthode `setUp` qui est une méthode magique qui s'execute avant chaque test.
+5. Ce test est inutile car il ne teste pas le service. Pour injecter le service et le rendre disponible dans la classe de test, il faut ajouter un attribut privé et l'initialiser dans la méthode `setUp` qui est une méthode magique qui s'exécute avant chaque test.
 
 ```php
 <?php
@@ -133,18 +133,18 @@ class GeometryServiceTest extends KernelTestCase
 
 ### Lancer les tests
 
-Pour lancer le test il suffit d'executer la commande suivante dans le terminal :
+Pour lancer le test, il suffit d'exécuter la commande suivante dans le terminal :
 
 ```bash
 php bin/phpunit
 ```
 
-1. Modifier le test en changeant de 25 à 26 et relancer le test pour voir le message d'erreur s'afficher.
+1. Modifiez le test en changeant 25 par 26 et relancez le test pour voir le message d'erreur s'afficher.
 ```bash
 There was 1 failure:
 
 1) App\Tests\GeometryServiceTest::testCalculateSquareArea
-La surface d'un carré de coté 5 doit être égal à 25
+La surface d'un carré de côté 5 doit être égal à 25
 Failed asserting that 25.0 matches expected 26.
 ``` 
 
@@ -152,8 +152,8 @@ Failed asserting that 25.0 matches expected 26.
 
 ## Objectif
 
-Un bon test coverage représente d'environ 80% de votre code, cela signifie que 80% de vos classes sont testées par des tests automatisés.
+Un bon test coverage représente environ 80% de votre code, cela signifie que 80% de vos classes sont testées par des tests automatisés.
 
 1. Forkez et clonez le projet suivant : https://github.com/CHAOUCHI/phase3-testing-exercices
-2. Je vous ai créé des services et des classes de Test, il vous faut remplir les méthodes de test avec les bonnes assertions pour que les tests passent.
+2. Je vous ai créé des services et des classes de test. Vous devez remplir les méthodes de test avec les bonnes assertions pour que les tests passent.
 
