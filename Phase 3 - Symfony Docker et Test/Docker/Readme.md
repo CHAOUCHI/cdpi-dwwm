@@ -135,6 +135,7 @@ Dans notre cas on a besoin de `nodejs` et `npm` pour faire tourner notre applica
 
 > ***Important à savoir*** : Prendre une image contenant déjà ce qu'il faut évite d'écrit des commandes `apt install` qui va ralentir le processus de création de l'image et l'allourdir.
 
+1. Créer un fichier `DockerFile` à la racine du projet
 *projet/DockerFile*
 ```Dockerfile
 # 1. On part d'une image de base qui contient déjà nodejs
@@ -151,6 +152,14 @@ EXPOSE 3000
 ENTRYPOINT ["node", "app.js"]
 ```
 
+2. Construire l'image docker et la nommé, ici on la nomme `jolieapidebilly` mais vous pouvez lui donner le nom que vous voulez.
+```bash
+docker build -t jolieapidebilly .
+```
+
+##### La syntaxe d'un DockerFile
+
+> Lisez la doc pour plus d'infos sur les commandes Dockerfile existantes : https://docs.docker.com/reference/dockerfile/
 
 Déscription des commandes :
 - `FROM` : Un DockerFile commence TOUJOURS par la commande `FROM` qui indique une image existante sur dockerhub à utiliser comme base pour construire notre image.
@@ -165,4 +174,8 @@ Déscription des commandes :
 ```bash
 docker run -p 3000:3000 my-image echo hello # avec CMD, la commande echo hello écrase la commande node app.js, l'application ne se lance pas
 docker run -p 3000:3000 my-image # avec ENTRYPOINT, la commande node app.js est exécutée même si on ne la précise pas dans la commande docker run
-``
+```
+
+#### 4. **Run** : Le DevOps execute le conteneur sur le serveur en précisant les ports TCP à ouvrir pour que les utilisateurs puissent accéder à l'application.
+
+```bash
