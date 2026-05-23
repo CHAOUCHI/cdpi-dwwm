@@ -1,1 +1,0 @@
-![schéma de la pyramide de test](test-pyramid.png)
