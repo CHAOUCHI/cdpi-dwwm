@@ -52,7 +52,15 @@ En 2010, Solomon Hykes, un ingénieur franco-américain, a créé Docker, une so
 
 Un conteneur de fret est une unité de transport standardisée qui peut être facilement déplacée d'un mode de transport à un autre (navire, train, camion) sans nécessiter de déchargement et de rechargement du contenu. De la même manière, Docker permet de créer des conteneurs logiciels qui peuvent être facilement déplacés d'un environnement à un autre (développement, test, production) sans nécessiter de modifications du code ou des dépendances.
 
+*container compatibale avec un bateau*
 ![alt text](image.png)
+
+*container assui compatible avec un train*
+![alt text](image-1.png)
+
+On peut donc en conclure que un conteneur de fret est compatible avec différents environnements : train, avion, bateau sans jamais changer de format.
+
+Un container docker est compatible avec différents environnements : développement(le pc du dev), test(ci/cd), production(hebergement) sans jamais changer de format qu'on soit sur Windows, Linux ou MacOS.
 
 
 ## Le workflow de Docker
