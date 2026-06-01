@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="output">Diag NA</p>
+    <button>Start</button>
+</body>
+<script>
+    const recognition = new SpeechRecognition();
+    recognition.continuous = false;
+    // polonaise: pl-PL
+    // japanese: ja-JP
+    // espanish: es-ES
+    // spanish argentine : es-AR
+    recognition.lang = "fr-FR";
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    const diagnostic = document.querySelector(".output");
+    const bg = document.querySelector("html");
+    const startBtn = document.querySelector("button");
+
+    startBtn.onclick = () => {
+        recognition.start();
+        console.log("Ready to receive a color command.");
+    };
+
+    recognition.onresult = (event) => {
+        console.log(event);
+        const color = event.results[0][0].transcript;
+        diagnostic.textContent = `Result received: ${color}`;
+        bg.style.backgroundColor = color;
+    };
+</script>
+
+</html>
