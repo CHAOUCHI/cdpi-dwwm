@@ -24,6 +24,8 @@
 - Ilian de Toulon vous a ecrit un repo pour vous aider a construire votre dossier et votre oral : 
     - oral : https://github.com/IlianMetina/Examen-DWWM
     - dossier projet, pro, diapo : https://github.com/IlianMetina/ilian-metina-dossiers-pros-DWWM
+
+- Eleonora : https://github.com/eleonora-tartaglia/eleonora-tartaglia-dossiers-pros-DWWM/tree/main
 ---
 
 # Roadmap Projet de Fin d'Année – Titre Pro DWWM
