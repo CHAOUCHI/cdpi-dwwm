@@ -20,6 +20,12 @@
 - **Module 2 (CCP2)** : Développement Back-End (NodeJS ou PHP, API, BDD, sécurité : hash password et attention aux injections)
 - **Dossier & Oral** : Documenter, présenter, justifier ses choix et démontrer votre compréhension du projet
 
+## Exemple de repo de projet des etudiants des annees d'avant
+- Ilian de Toulon vous a ecrit un repo pour vous aider a construire votre dossier et votre oral : 
+    - oral : https://github.com/IlianMetina/Examen-DWWM
+    - dossier projet, pro, diapo : https://github.com/IlianMetina/ilian-metina-dossiers-pros-DWWM
+
+- Eleonora : https://github.com/eleonora-tartaglia/eleonora-tartaglia-dossiers-pros-DWWM/tree/main
 ---
 
 # Roadmap Projet de Fin d'Année – Titre Pro DWWM
