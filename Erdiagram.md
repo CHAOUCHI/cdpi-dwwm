@@ -1,0 +1,5 @@
+
+```mermaid
+erDiagram
+User
+```
